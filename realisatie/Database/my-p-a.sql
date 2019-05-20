@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 20 mei 2019 om 14:00
+-- Gegenereerd op: 20 mei 2019 om 14:36
 -- Serverversie: 10.1.36-MariaDB
 -- PHP-versie: 7.2.11
 
@@ -80,6 +80,8 @@ CREATE TABLE `task` (
 CREATE TABLE `user` (
   `user_ID` int(255) NOT NULL,
   `E-mail` varchar(40) NOT NULL,
+  `Voornaam` varchar(25) NOT NULL,
+  `Achternaam` varchar(25) NOT NULL,
   `password` varchar(20) NOT NULL,
   `User_name` varchar(20) NOT NULL,
   `abo_ID` int(255) NOT NULL
