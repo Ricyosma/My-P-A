@@ -18,5 +18,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My P-A</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
   </head>
   <body>
+
+    <nav>
+      <ul>
+        <li><a href="#">Agenda</a></li>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Account</a></li>
+      </ul>
+    </nav>

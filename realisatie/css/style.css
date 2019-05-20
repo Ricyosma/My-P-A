@@ -6,4 +6,25 @@
 artic wit ->  color: F0F4FF;
 lichtblauw->  color: 4E67EB;
 donkerblauw ->  color: 291D89; */
+html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
 
+body{
+    height: 100%;
+    min-height: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    }
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    color: #000;
+    text-decoration: none;
+}
