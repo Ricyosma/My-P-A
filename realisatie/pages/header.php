@@ -6,10 +6,9 @@
 		  } else {
         $_page="home";
       }
-    } 
-    else{
+    } else{
         $_page="home";
-      }
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,13 +21,14 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/agenda.css">
+    <link rel="stylesheet" href="css/header-footer.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
   </head>
   <body>
-
     <nav>
       <ul>
         <li><a href="index.php?page=agenda">Agenda</a></li>

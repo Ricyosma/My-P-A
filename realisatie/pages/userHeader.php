@@ -1,6 +1,6 @@
 <?php 
     if (isset($_GET['page'])){
-      $pages=array("home","uitloggen","aanmelden","register","account");
+      $pages=array("home","agenda","uitloggen","aanmelden","register","account");
 		  if (in_array($_GET['page'], $pages)) {
 			  $_page=$_GET['page'];
 		  } else {
@@ -22,3 +22,4 @@
     <title>My P-A</title>
   </head>
   <body>
+    
