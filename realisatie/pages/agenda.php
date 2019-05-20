@@ -1,6 +1,6 @@
 <section>
    <div class="grid-container">
-        <div class="Monday">test</div>
+        <div class="Monday"></div>
         <div class="Tuesday"></div>
         <div class="Wednesday"></div>
         <div class="Thuersday"></div>
