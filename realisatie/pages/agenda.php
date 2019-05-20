@@ -1,25 +1,45 @@
 <section>
    <div class="grid-container">
-        <div class="Monday lane">
-            <h4>Monday</h4>            
+        <div class="day">
+            <h4>Monday</h4> 
+            <div class="Monday lane">
+                        
+            </div>
         </div>
-        <div class="Tuesday lane">
+        <div class="day">
             <h4>Tuesday</h4>
+            <div class="Tuesday lane">
+
+            </div>
         </div>
-        <div class="Wednesday lane">
+        <div class="day">
             <h4>Wednesday</h4>
+            <div class="Wednesday lane">
+
+            </div>
         </div>
-        <div class="Thursday lane">
+        <div class="day">
             <h4>Thursday</h4>
+            <div class="Thursday lane">
+
+            </div>
         </div>
-        <div class="Friday lane">
+        <div class="day">
             <h4>Friday</h4>
+            <div class="Friday lane">
+            </div>
         </div>
-        <div class="Saturday lane">
+        <div class="day">
             <h4>Saturday</h4>
+            <div class="Saturday lane">
+
+            </div>
         </div>
-        <div class="Sunday lane">
+        <div class="day">
             <h4>Sunday</h4>
+            <div class="Sunday">
+
+            </div>
         </div>
     </div>
 </section>
