@@ -6,7 +6,7 @@
 }
 
 .Monday { grid-area: Monday;
-  background-color: black;
+  background-color: blue;
 }
 
 .Tuesday { grid-area: Tuesday; 
