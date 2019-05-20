@@ -1,7 +1,7 @@
 <?php
 	session_start();
 
-	require("includes/connection.php");
+	// require("includes/connection.php");
 
 	$id = $_SESSION['id'];
 
