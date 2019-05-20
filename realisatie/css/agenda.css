@@ -5,16 +5,30 @@
   grid-template-areas: "Monday Tuesday Wednesday Thuersday Friday Saturday Sunday" "Monday Tuesday Wednesday Thuersday Friday Saturday Sunday" "Monday Tuesday Wednesday Thuersday Friday Saturday Sunday" "Monday Tuesday Wednesday Thuersday Friday Saturday Sunday" "Monday Tuesday Wednesday Thuersday Friday Saturday Sunday" "Monday Tuesday Wednesday Thuersday Friday Saturday Sunday" "Monday Tuesday Wednesday Thuersday Friday Saturday Sunday" "Monday Tuesday Wednesday Thuersday Friday Saturday Sunday" "Monday Tuesday Wednesday Thuersday Friday Saturday Sunday" "Monday Tuesday Wednesday Thuersday Friday Saturday Sunday" "Monday Tuesday Wednesday Thuersday Friday Saturday Sunday" "Monday Tuesday Wednesday Thuersday Friday Saturday Sunday" "Monday Tuesday Wednesday Thuersday Friday Saturday Sunday" "Monday Tuesday Wednesday Thuersday Friday Saturday Sunday" "Monday Tuesday Wednesday Thuersday Friday Saturday Sunday" "Monday Tuesday Wednesday Thuersday Friday Saturday Sunday" "Monday Tuesday Wednesday Thuersday Friday Saturday Sunday" "Monday Tuesday Wednesday Thuersday Friday Saturday Sunday" "Monday Tuesday Wednesday Thuersday Friday Saturday Sunday" "Monday Tuesday Wednesday Thuersday Friday Saturday Sunday" "Monday Tuesday Wednesday Thuersday Friday Saturday Sunday" "Monday Tuesday Wednesday Thuersday Friday Saturday Sunday" "Monday Tuesday Wednesday Thuersday Friday Saturday Sunday";
 }
 
-.Monday { grid-area: Monday; }
+.Monday { grid-area: Monday;
+  background-color: black;
+}
 
-.Tuesday { grid-area: Tuesday; }
+.Tuesday { grid-area: Tuesday; 
 
-.Wednesday { grid-area: Wednesday; }
+}
 
-.Thuersday { grid-area: Thuersday; }
+.Wednesday { grid-area: Wednesday; 
 
-.Friday { grid-area: Friday; }
+}
 
-.Saturday { grid-area: Saturday; }
+.Thuersday { grid-area: Thuersday; 
 
-.Sunday { grid-area: Sunday; }
+}
+
+.Friday { grid-area: Friday; 
+
+}
+
+.Saturday { grid-area: Saturday; 
+
+}
+
+.Sunday { grid-area: Sunday; 
+
+}
