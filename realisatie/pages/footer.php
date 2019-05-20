@@ -1,10 +1,6 @@
-    <footer class="">
-      <div class="">
-        <div class="">
-          <div class="">
-            <p>Copyright © mboRijnland groep 1. All rights reserved.</p>
-          </div>
-        </div>
+    <footer id="footer">
+      <div class="footer-content">
+        <p>Copyright © mboRijnland groep 1. All rights reserved.</p>
       </div>
     </footer>
   </body>
