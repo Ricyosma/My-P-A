@@ -9,3 +9,6 @@
         <div class="Sunday"></div>
     </div>
 </section>
+<?php 
+
+    echo 'welkom';
