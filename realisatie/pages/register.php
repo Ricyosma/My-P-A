@@ -1,6 +1,6 @@
 <?php
 
-	require_once('connection.php');
+	require_once('./includes/connection.php');
 
 	$user_id = $message = $voornaam = $achternaam = $adres = $woonplaats = $postcode = $telefoon =  $mail = $password = $pwd = '';
 
@@ -42,7 +42,7 @@
         }
 
         $conn = null;
-    } else if (!$pwd == $pwdR) {
+    } else {
         $message = "wachtwoord is niet het zelfde";
     }
 ?>
@@ -78,6 +78,7 @@
             <br>
             <label for="exampleInputPassword2">Herhaal wachtwoord</label>
             <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Herhaal uw wachtwoord" required name="wachtwoordR">
+            <h4> <?php echo $message ?> </h4>
         </div>
         <div class="form-group">
             <label for="telefoonnummer">Telefoonnummer</label>
