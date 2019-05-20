@@ -1,6 +1,6 @@
 <?php 
     if (isset($_GET['page'])){
-      $pages=array("home","uitloggen","aanmelden","register","account");
+      $pages=array("home", "agenda", "dashboard", "account", "uitloggen","aanmelden","register","account");
 		  if (in_array($_GET['page'], $pages)) {
 			  $_page=$_GET['page'];
 		  } else {
@@ -23,13 +23,15 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- Bootstrap CSS -->
+
   </head>
   <body>
 
     <nav>
       <ul>
-        <li><a href="#">Agenda</a></li>
-        <li><a href="#">Dashboard</a></li>
-        <li><a href="#">Account</a></li>
+        <li><a href="index.php?page=agenda">Agenda</a></li>
+        <li><a href="index.php?page=dashboard">Dashboard</a></li>
+        <li><a href="index.php?page=account">Account</a></li>
       </ul>
     </nav>
