@@ -3,7 +3,7 @@
 
 	// require("includes/connection.php");
 
-	$id = $_SESSION['id'];
+	// $id = $_SESSION['id'];
 
 	if (isset($id)) {
 		$_head = 'pages/userHeader';
