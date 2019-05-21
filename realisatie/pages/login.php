@@ -21,15 +21,14 @@ if(empty($user) || empty($pass)) {
 		$_SESSION['anaam'] = $anaam;
 		$_SESSION['admin'] = $admin;
 		$_SESSION['vnaam'] = $vnaam;
-		header("Location: ../index.php?page=home");
+		header("Location: ./index.php?page=home");
 	} else {
 		$message = "Username/Password is wrong";
 	}
 }
 
 ?>
-
-<form action="includes/login.php" id="aan-form" method="post">
+<form action="" id="aan-form" method="post">
 			<div class="form-group">
 				<?php echo $message ?>
 			</div>
