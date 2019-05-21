@@ -1,6 +1,6 @@
 <?php
 require '../includes/connection.php';
-//if(isset($_POST['submit'])){
+if(isset($_POST['submit'])){
 $user = $ww = $pass = '';
 $user = $_POST['email'];
 $ww =  $_POST['password'];
@@ -25,11 +25,11 @@ if(empty($user) || empty($pass)) {
 		$message = "Username/Password is wrong";
 	}
 }
-//}
+}
 ?>
 <form action="" id="aan-form" method="post">
 			<div class="form-group">
-<?php /*if(isset($_POST['submit'])){*/ echo $message/*;{*/ ?>
+<?php if(isset($_POST['submit'])){ echo $message;{ ?>
 			</div>
 	    <div class="form-group">
 	      <label for="exampleInputEmail2">Emailadres</label>
