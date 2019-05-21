@@ -19,6 +19,32 @@ nav li a {
     text-decoration: none;
 }
 
+nav {
+    width: 1921px;
+    height: 210.76px;
+    background: #4e67eb;
+    filter: drop-shadow(3px 6px 6px rgba(36, 33, 33, 0.65));
+}
+
+.icon {
+    width: 205px;
+    height: 205px;
+    /* background: url(...); */
+}
+
+/* Hoofd text (in banner My-P-A) : 
+font-family: "Segoe UI";
+font-weight: normal;
+font-size: 100px;
+text-align: left;
+color: #fff;
+
+menu (in banner) : 
+width: 587.5px;
+height: 74px;
+background: transparent;
+!deze moet sws nog flink anders want hij pakt ander soort waardes ^^ */ */
+
 #footer {
     clear: both;
     background-color: red;

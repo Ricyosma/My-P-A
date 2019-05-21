@@ -32,6 +32,8 @@
   <body>
 
     <nav id="navbar">
+        <div class="icon"></div>
+        <div class="text">My-P-A</div>
       <div>
         <ul>
           <li><a href="index.php?page=agenda">Agenda</a></li>
