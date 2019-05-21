@@ -34,7 +34,7 @@
 
 
   <nav class="navbar navbar-expand-lg">
-  <a class="navbar-brand" href="home.php">My P-A</a>
+  <a class="navbar-brand" href="index.php?page=home">My P-A</a>
     <ul class="navbar-nav navbar-right">
       <li class="nav-item active">
         <a class="nav-link" href="index.php?page=agenda">Agenda</a>
