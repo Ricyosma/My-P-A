@@ -34,11 +34,27 @@
     border: none;
     width: 100%;
 }
+.star-rating {
+  line-height:32px;
+  font-size:1.25em;
+}
+
+.star-rating .fa-star {
+    color: yellow;
+}
 #goButton {
     border-radius: 5px;
     border: none;
     background-color: #4E67EB;
     color: white;
     width: 60%;
+    padding: 10px;
+}
+#stopButton {
+    border-radius: 5px;
+    border: none;
+    background-color: #4E67EB;
+    color: white;
+    width: 30%;
     padding: 10px;
 }

@@ -8,7 +8,7 @@
         </div>
     </div>
 </section>
-<?php 
+    <?php 
 
     include 'pages/agenda.php';
     
@@ -27,12 +27,6 @@
             </div>
             <div class="dashInfo">
                 <h2 class="title">Priority</h2>
-            </div>
-            <div id="discription">
-                <h2>Description</h2>
-                <textarea name="discription" id="taskDisc" rows="8"></textarea>
-            </div>
-            <div class="dashInfo">
                 <div class="star-rating">
                     <span class="far fa-circle" data-rating="1"></span>
                     <span class="far fa-circle" data-rating="2"></span>
@@ -42,7 +36,15 @@
                     <input type="hidden" name="whatever1" class="rating-value" value="2.56">
                 </div>
             </div>
+            <div id="discription">
+                <h2>Description</h2>
+                <textarea name="discription" id="taskDisc" rows="8"></textarea>
+            </div>
+            <div class="dashInfo">
+                
+            </div>
             <button id="goButton" type="submit">Go</button>
+            <button id="stopButton">Cancel</button>
         </div>
     </form>
 </section>

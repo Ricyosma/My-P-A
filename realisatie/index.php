@@ -30,7 +30,7 @@
 		}
 	}
 ?>
-<div class="">
+<div class="wrapper">
     <?php 
 		require("pages/".$_page.".php");
     ?>

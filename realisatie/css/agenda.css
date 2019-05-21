@@ -1,5 +1,9 @@
+.day {
+  min-height: 100% !important;
+}
 .grid-container {
   display: grid;
+  min-height: 100% !important;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 100% 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas: "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday";
@@ -29,13 +33,13 @@
 
 .lane {
   border-right: 1px solid lightgrey;
-  height: 100% !important; 
+  min-height: 100% !important;
 }
 .day h4 {
   text-align: center;
 }
-
 #agenda {
   width: 100% !important;
   float: left;
+  height: 400px !important;
 }

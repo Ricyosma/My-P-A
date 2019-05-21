@@ -6,15 +6,16 @@
 artic wit ->  background-color: #F0F4FF;
 lichtblauw->  background-color: #4E67EB;
 donkerblauw ->  background-color: #291D89; */
+html, body {
+    min-height: 100% !important;
+}
 html {
     overflow-y: scroll;
     scroll-behavior: smooth;
 }
-html .lane {
-    min-height: 100% !important;
-}
 .wrapper {
-    width: 95%;
+    width: 100%;
+    min-height: 100% !important;
     margin: auto, auto, auto, -40px;
 }
 
