@@ -1,18 +1,24 @@
-<div id="left">
+<div class="left">
     <section id="dashMessage">
-    <div id="messageHolder">
-        <div id="messageOutput">
-            <?php 
-                // echo $dashMessage 
-            ?>
+        <div id="messageHolder">
+            <h3>Task change output:</h3>
+            <div id="messageOutput">
+                <?php 
+                    if ($dashMessage = 'There are no changes made.') {
+                    
+                    } else {
+                        $dashMessage = 'There are no changes made.';
+                    }
+                    echo $dashMessage;
+                ?>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
     <?php 
 
-    include 'pages/agenda.php';
+        include 'pages/agenda.php';
     
-?>
+    ?>
 </div>
 <section id="dashboard">
     <form action="" method="post">
