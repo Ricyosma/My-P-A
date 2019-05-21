@@ -9,7 +9,6 @@
     box-sizing: border-box;
 }
 
-
 nav li {
     float: left;
 }
@@ -26,11 +25,15 @@ nav {
     filter: drop-shadow(3px 6px 6px rgba(36, 33, 33, 0.65));
 }
 
-.icon {
+.nav-content {
+    display: inline-block;
+}
+
+/* .icon {
     width: 205px;
     height: 205px;
-    /* background: url(...); */
-}
+    /* background: url(...);
+} */
 
 .text {
     font-family: "Segoe UI";
@@ -45,12 +48,11 @@ nav {
     height: 74px;
     background: transparent;
 }
-/* !deze moet sws nog flink anders want hij pakt ander soort waardes ^^ */
 
 #footer {
     clear: both;
-    background-color: red;
-    color: white;
+    background-color: #fff;
+    color: #000;
     text-align: center;
     height: 40px;
     margin-top: -40px;
