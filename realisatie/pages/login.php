@@ -20,7 +20,7 @@
 			$_SESSION['id'] = $id;
 			$_SESSION['anaam'] = $anaam;
 			$_SESSION['vnaam'] = $vnaam;
-			header("Location: ../index.php?page=home");
+			header("Location: index.php?page=agenda");
 		} else {
 			$message = "Username/Password is wrong";
 		}
