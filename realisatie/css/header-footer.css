@@ -9,10 +9,6 @@
     box-sizing: border-box;
 }
 
-nav ul {
-    list-style-type: none;
-    background-color: #000;
-}
 
 nav li {
     float: left;
@@ -25,7 +21,9 @@ nav li a {
 
 #footer {
     clear: both;
-    position: relative;
+    background-color: red;
+    color: white;
+    text-align: center;
     height: 40px;
     margin-top: -40px;
 }
