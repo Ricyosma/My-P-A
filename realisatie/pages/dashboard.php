@@ -40,7 +40,12 @@
                 <textarea name="discription" id="taskDisc" rows="8"></textarea>
             </div>
             <div class="dashInfo">
-                <h3>Repeat</h3>
+                <h3>Color</h3>
+                <select name="" id="">
+                    <option value="blue">Blue</option>
+                    <option value="blue">Green</option>
+                    <option value="blue">Pink</option>
+                </select>
             </div>
             <button id="goButton" type="submit">Go</button>
             <button id="stopButton">Cancel</button>
