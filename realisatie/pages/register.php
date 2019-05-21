@@ -1,7 +1,7 @@
 <?php
 
 	require_once('../includes/connection.php');
-
+if(isset($_POST['submit'])){
 	$message = $voornaam = $achternaam = $adres = $woonplaats = $postcode = $telefoon =  $mail = $password = $pwd = '';
 
     $voornaam = $_POST['Voornaam'];
@@ -19,7 +19,7 @@
         try {
         // set the PDO error mode to exception
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $sql = "INSERT INTO user (Voornaam, Achternaam, E_mail, password) 
+        $sql = "INSERT INTO user (Voornaam, Achternaam, E_mail, passw) 
                 VALUES ('$voornaam','$achternaam', '$mail','$password')";
         // use exec() because no results are returned
         $conn->exec($sql);
@@ -35,6 +35,7 @@
     } else {
         $message = "wachtwoord is niet het zelfde";
     }
+}
 ?>
 <form action="" id="reg-form" method="post">
         <div class="form-group">
@@ -56,7 +57,8 @@
             <br>
             <label for="exampleInputPassword2">Herhaal wachtwoord</label>
             <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Herhaal uw wachtwoord" required name="passwordR">
-            <h4> <?php echo $message ?> </h4>
+            <h4> <?php if(isset($_POST['submit'])){
+            echo $message;}?> </h4>
         </div>
-    <button type="submit" class="btn-sub btn btn-primary">Registreren</button>
+    <button type="submit" name='submit' class="btn-sub btn btn-primary">Registreren</button>
   </form>
