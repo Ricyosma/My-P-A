@@ -3,7 +3,7 @@
         <div class="day">
             <h4>Monday</h4> 
             <div class="Monday lane">
-                        
+                
             </div>
         </div>
         <div class="day">
@@ -15,7 +15,6 @@
         <div class="day">
             <h4>Wednesday</h4>
             <div class="Wednesday lane">
-
             </div>
         </div>
         <div class="day">

@@ -1,6 +1,6 @@
 <?php
 
-	require_once('../includes/connection.php');
+	require_once('includes/connection.php');
 if(isset($_POST['submit'])){
 	$message = $voornaam = $achternaam = $adres = $woonplaats = $postcode = $telefoon =  $mail = $password = $pwd = '';
 
@@ -32,7 +32,7 @@ if(isset($_POST['submit'])){
         }
 
         $conn = null;
-        header("Location: login.php?page=login");
+        header("Location: index.php?page=login");
     } else {
         $message = "wachtwoord is niet het zelfde";
     }

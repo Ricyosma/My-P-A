@@ -1,3 +1,14 @@
+<?php
+//require 'includes/connection.php';
+
+$color = "SELECT DISTINCT Color FROM color";
+$result2 = mysqli_query($conn, $query1);
+$options = "";
+ while($row2 = mysqli_fetch_array($result2))
+{
+  $options = $options."<option>$row2[0]</option>";
+    }
+?>
 <div class="left">
     <section id="dashMessage">
         <div id="messageHolder">
@@ -24,30 +35,28 @@
     <form action="" method="post">
         <div id="dashControls">
             <div class="dashInfo">
-                <h2 class="title">Task name</h2>
+                <h3 class="title">Task name</h3>
                 <input type="text" name="taskName" id="taskName" placeholder="">
             </div>
             <div class="dashInfo">
-                <h2 class="title">Time</h2>
-                <input type="time" name="dash" id="">
+                <h3 class="title">Time</h3>
+                <input type="time" name="dash" id="taskTime">
             </div>
             <div class="dashInfo">
-                <h2 class="title">Priority</h2>
-                <div class="star-rating">
-                    <span class="far fa-circle" data-rating="1"></span>
-                    <span class="far fa-circle" data-rating="2"></span>
-                    <span class="far fa-circle" data-rating="3"></span>
-                    <span class="far fa-circle" data-rating="4"></span>
-                    <span class="far fa-circle" data-rating="5"></span>
-                    <input type="hidden" name="whatever1" class="rating-value" value="2.56">
-                </div>
+                <h3 class="title">Priority</h3>
+                <input type="range" name="range" id="" min="0" max="5">
             </div>
             <div id="discription">
-                <h2>Description</h2>
+                <h3>Description</h3>
                 <textarea name="discription" id="taskDisc" rows="8"></textarea>
             </div>
             <div class="dashInfo">
-                
+                <h3>Color</h3>
+                <select name="" id="">
+                    <option value="blue">Blue</option>
+                    <option value="blue">Green</option>
+                    <option value="blue">Pink</option>
+                </select>
             </div>
             <button id="goButton" type="submit">Go</button>
             <button id="stopButton">Cancel</button>

@@ -23,9 +23,6 @@
     <link rel="stylesheet" href="css/header-footer.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/bootstrap.css">
   </head>
   <body>
   <nav class="navbar navbar-expand-lg navbar-dark">
@@ -34,23 +31,12 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="index.php?page=agenda">Agenda</a>
+            <a class="dropdown-item" href="index.php?page=register">Registreren</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.php?page=dashboard">Dashboard</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Account
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="index.php?page=register">Registreren</a>
-              <a class="dropdown-item" href="index.php?page=login">Aanmelden</a>
-              <!-- <div class="dropdown-divider"></div> -->
-              <!-- <a class="dropdown-item" href="#">Something else here</a> -->
-            </div>
+            <a class="dropdown-item" href="index.php?page=login">Aanmelden</a>
           </li>
         </ul>
       </div>
