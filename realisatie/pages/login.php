@@ -6,7 +6,7 @@
 	$ww =  $_POST['password'];
 	$pass = md5($ww);
 	if(empty($user) || empty($pass)) {
-		$message = 'All field are required';
+		$message = 'All fields are required';
 	} else {
 		$query = $conn->prepare("SELECT * FROM user WHERE E_mail=? AND passw=?");
 		$query->execute(array($user,$pass));
