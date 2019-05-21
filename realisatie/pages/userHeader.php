@@ -9,6 +9,7 @@
     } else{
         $_page="agenda";
     }
+    $vnaam = $_SESSION['vnaam'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
