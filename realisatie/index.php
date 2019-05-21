@@ -9,7 +9,11 @@
 		$_head = 'pages/userHeader';
 	} else {
 		$_head = 'pages/header'; 
-    }
+	}
+	
+	if ($_page == 'dashboard') {
+		include 'dashboard.php';
+	}
     
 	require($_head.".php");
 
