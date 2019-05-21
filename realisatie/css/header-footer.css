@@ -26,11 +26,11 @@ nav {
     filter: drop-shadow(3px 6px 6px rgba(36, 33, 33, 0.65));
 }
 
-.icon {
+/* .icon {
     width: 205px;
     height: 205px;
-    /* background: url(...); */
-}
+    /* background: url(...);
+} */
 
 .text {
     font-family: "Segoe UI";
@@ -45,7 +45,6 @@ nav {
     height: 74px;
     background: transparent;
 }
-/* !deze moet sws nog flink anders want hij pakt ander soort waardes ^^ */
 
 #footer {
     clear: both;
