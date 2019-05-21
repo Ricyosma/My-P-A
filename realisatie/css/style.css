@@ -53,6 +53,7 @@ text-align: left;
 color: #fff; */
 
 /*Css home pagina */
-#cola {
+.cola {
     text-align: center;
+    background-color: aqua;
 }
