@@ -30,11 +30,11 @@
 		}
 	}
 ?>
-<div class="wrapper">
+<!-- <div class="content"> -->
     <?php 
-		require("pages/".$_page.".php");
+			require("pages/".$_page.".php");
     ?>
     
-</div>
+<!-- </div> -->
 
 <?php include 'pages/footer.php';?>

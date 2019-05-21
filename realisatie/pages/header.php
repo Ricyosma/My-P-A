@@ -32,24 +32,18 @@
   </head>
   <body>
 
-    <nav id="navbar">
-      <div class="nav-content">
-        <div class="text">My-P-A</div>
-        <div class="menu">
-          <ul>
-            <li><a href="index.php?page=agenda">Agenda</a></li>
-            <li><a href="index.php?page=dashboard">Dashboard</a></li>
-            <li><a href="index.php?page=account">Account</a></li>
-            <!-- <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">Dropdown</a>
-              <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li> -->
-          </ul>
-        </div>
-      </div>
-    </nav>
+
+  <nav class="navbar navbar-expand-lg">
+  <a class="navbar-brand" href="index.php?page=home">My P-A</a>
+    <ul class="navbar-nav navbar-right">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.php?page=agenda">Agenda</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.php?page=dashboard">Dashboard</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Account</a>
+      </li>
+    </ul>
+</nav>
