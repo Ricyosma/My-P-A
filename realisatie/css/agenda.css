@@ -29,14 +29,13 @@
 
 .lane {
   border-right: 1px solid lightgrey;
-  height: 400px; 
+  height: 100% !important; 
 }
 .day h4 {
   text-align: center;
 }
 
 #agenda {
-  width: 80% !important;
+  width: 100% !important;
   float: left;
-  background-color: aqua !important;
 }
