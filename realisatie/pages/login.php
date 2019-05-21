@@ -1,4 +1,38 @@
+<?php
+require 'connection.php';
+$user = $ww = $pass = '';
+$user = $_POST['email'];
+$ww =  $_POST['password'];
+$pass = md5($ww);
+if(empty($user) || empty($pass)) {
+	$message = 'All field are required';
+} else {
+	$query = $conn->prepare("SELECT * FROM user WHERE mail=? AND wachtwoord=?");
+	$query->execute(array($user,$pass));
+	$row = $query->fetch(PDO::FETCH_BOTH);
+	if($query->rowCount() > 0) {
+		$_SESSION['username'] = $user;
+		$id = $row["users_id"];
+		$vnaam = $row["voornaam"];
+		$anaam = $row['achternaam'];
+		$admin =  $row["admin"];
+		session_start();
+		$_SESSION['id'] = $id;
+		$_SESSION['anaam'] = $anaam;
+		$_SESSION['admin'] = $admin;
+		$_SESSION['vnaam'] = $vnaam;
+		header("Location: ../index.php?page=home");
+	} else {
+		$message = "Username/Password is wrong";
+	}
+}
+
+?>
+
 <form action="includes/login.php" id="aan-form" method="post">
+			<div class="form-group">
+				<?php echo $message ?>
+			</div>
 	    <div class="form-group">
 	      <label for="exampleInputEmail2">Emailadres</label>
 	      <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Vul uw email in" require name="email">
