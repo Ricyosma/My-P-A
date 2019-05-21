@@ -33,13 +33,14 @@
   <body>
 
     <nav id="navbar">
-        <div class="icon"></div>
-        <div class="text">My-P-A</div>
       <div>
-        <ul>
-          <li><a href="index.php?page=agenda">Agenda</a></li>
-          <li><a href="index.php?page=dashboard">Dashboard</a></li>
-          <li><a href="index.php?page=account">Account</a></li>
-        </ul>
+          <div class="text">My-P-A</div>
+        <div class="menu">
+          <ul>
+            <li><a href="index.php?page=agenda">Agenda</a></li>
+            <li><a href="index.php?page=dashboard">Dashboard</a></li>
+            <li><a href="index.php?page=account">Account</a></li>
+          </ul>
+        </div>
       </div>
     </nav>

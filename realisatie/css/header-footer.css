@@ -32,18 +32,20 @@ nav {
     /* background: url(...); */
 }
 
-/* Hoofd text (in banner My-P-A) : 
-font-family: "Segoe UI";
-font-weight: normal;
-font-size: 100px;
-text-align: left;
-color: #fff;
+.text {
+    font-family: "Segoe UI";
+    font-weight: normal;
+    font-size: 100px;
+    text-align: left;
+    color: #fff;
+}
 
-menu (in banner) : 
-width: 587.5px;
-height: 74px;
-background: transparent;
-!deze moet sws nog flink anders want hij pakt ander soort waardes ^^ */ */
+.menu {
+    width: 587.5px;
+    height: 74px;
+    background: transparent;
+}
+/* !deze moet sws nog flink anders want hij pakt ander soort waardes ^^ */
 
 #footer {
     clear: both;
