@@ -19,7 +19,8 @@
   </head>
 <body>
     <div class="cola">
-        <h3> Welkom bij My Personal Agenda, met deze website wordt plannen een makkie! </h3>
+        <h3> Welkom bij My Personal Agenda, 
+            met deze website wordt plannen een makkie! </h3>
 
     </div>
 </body>
