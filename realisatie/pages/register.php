@@ -19,7 +19,7 @@ if(isset($_POST['submit'])){
         try {
         // set the PDO error mode to exception
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $sql = "INSERT INTO user (Voornaam, Achternaam, E_mail, passw) 
+        $sql = "INSERT INTO user (First_name, Last_name, E_mail, passw) 
                 VALUES ('$voornaam','$achternaam', '$mail','$password')";
         // use exec() because no results are returned
         $conn->exec($sql);

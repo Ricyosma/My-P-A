@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 21 mei 2019 om 09:39
+-- Gegenereerd op: 21 mei 2019 om 12:46
 -- Serverversie: 10.1.36-MariaDB
 -- PHP-versie: 7.2.11
 
@@ -30,16 +30,17 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `abo` (
   `Abo_ID` int(255) NOT NULL,
-  `Soort` varchar(20) NOT NULL,
-  `Prijs` float NOT NULL
+  `Class` varchar(20) NOT NULL,
+  `Price` float NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `abo`
 --
 
-INSERT INTO `abo` (`Abo_ID`, `Soort`, `Prijs`) VALUES
-(1, 'Maand', 2.55);
+INSERT INTO `abo` (`Abo_ID`, `Class`, `Price`) VALUES
+(1, 'Maand', 5.99),
+(2, 'Jaar', 36.99);
 
 -- --------------------------------------------------------
 
@@ -55,12 +56,36 @@ CREATE TABLE `agenda` (
 -- --------------------------------------------------------
 
 --
+-- Tabelstructuur voor tabel `color`
+--
+
+CREATE TABLE `color` (
+  `Color_ID` int(20) NOT NULL,
+  `Color` varchar(15) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `color`
+--
+
+INSERT INTO `color` (`Color_ID`, `Color`) VALUES
+(1, 'UFO Green'),
+(2, 'Plastic Pink'),
+(3, 'Proton Purple'),
+(4, 'Fiery Reds'),
+(5, 'Ocean Blue'),
+(6, 'Sunset Orange');
+
+-- --------------------------------------------------------
+
+--
 -- Tabelstructuur voor tabel `factuur`
 --
 
 CREATE TABLE `factuur` (
-  `Factuur_ID` int(255) NOT NULL,
-  `User_ID` int(255) NOT NULL
+  `Invoice_ID` int(255) NOT NULL,
+  `User_ID` int(255) NOT NULL,
+  `Abo_ID` int(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -71,8 +96,10 @@ CREATE TABLE `factuur` (
 
 CREATE TABLE `task` (
   `Task_ID` int(255) NOT NULL,
+  `Task` varchar(150) NOT NULL,
   `Priority` varchar(10) NOT NULL,
   `Description` text NOT NULL,
+  `Color_ID` int(20) NOT NULL,
   `Date` date NOT NULL,
   `Time` time NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -86,19 +113,10 @@ CREATE TABLE `task` (
 CREATE TABLE `user` (
   `user_ID` int(255) NOT NULL,
   `E_mail` varchar(40) NOT NULL,
-  `Voornaam` varchar(25) NOT NULL,
-  `Achternaam` varchar(25) NOT NULL,
-  `password` varchar(20) NOT NULL
+  `First_name` varchar(25) NOT NULL,
+  `Last_name` varchar(25) NOT NULL,
+  `passw` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Gegevens worden geëxporteerd voor tabel `user`
---
-
-INSERT INTO `user` (`user_ID`, `E_mail`, `Voornaam`, `Achternaam`, `password`) VALUES
-(831873443, '', '', '', 'd41d8cd98f00b204e980'),
-(831873447, 'beheer@mypa.com', 'beheer', 'van beheer', '21232f297a57a5a74389'),
-(831873450, 'beheer2@mypa.com', 'beheer2', 'van beheer', '16bdf9fab24309d554a8');
 
 -- --------------------------------------------------------
 
@@ -130,17 +148,25 @@ ALTER TABLE `agenda`
   ADD KEY `Task_ID` (`Task_ID`);
 
 --
+-- Indexen voor tabel `color`
+--
+ALTER TABLE `color`
+  ADD PRIMARY KEY (`Color_ID`);
+
+--
 -- Indexen voor tabel `factuur`
 --
 ALTER TABLE `factuur`
-  ADD PRIMARY KEY (`Factuur_ID`),
-  ADD KEY `User_ID` (`User_ID`);
+  ADD PRIMARY KEY (`Invoice_ID`),
+  ADD KEY `User_ID` (`User_ID`),
+  ADD KEY `Abo_ID` (`Abo_ID`);
 
 --
 -- Indexen voor tabel `task`
 --
 ALTER TABLE `task`
-  ADD PRIMARY KEY (`Task_ID`);
+  ADD PRIMARY KEY (`Task_ID`),
+  ADD KEY `Color_ID` (`Color_ID`);
 
 --
 -- Indexen voor tabel `user`
@@ -165,13 +191,19 @@ ALTER TABLE `user_abo`
 -- AUTO_INCREMENT voor een tabel `abo`
 --
 ALTER TABLE `abo`
-  MODIFY `Abo_ID` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `Abo_ID` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT voor een tabel `color`
+--
+ALTER TABLE `color`
+  MODIFY `Color_ID` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT voor een tabel `factuur`
 --
 ALTER TABLE `factuur`
-  MODIFY `Factuur_ID` int(255) NOT NULL AUTO_INCREMENT;
+  MODIFY `Invoice_ID` int(255) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT voor een tabel `task`
@@ -183,7 +215,7 @@ ALTER TABLE `task`
 -- AUTO_INCREMENT voor een tabel `user`
 --
 ALTER TABLE `user`
-  MODIFY `user_ID` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=831873451;
+  MODIFY `user_ID` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=831873457;
 
 --
 -- Beperkingen voor geëxporteerde tabellen
@@ -200,7 +232,14 @@ ALTER TABLE `agenda`
 -- Beperkingen voor tabel `factuur`
 --
 ALTER TABLE `factuur`
-  ADD CONSTRAINT `factuur_ibfk_1` FOREIGN KEY (`User_ID`) REFERENCES `user` (`user_ID`);
+  ADD CONSTRAINT `factuur_ibfk_1` FOREIGN KEY (`Abo_ID`) REFERENCES `user_abo` (`Abo_ID`),
+  ADD CONSTRAINT `factuur_ibfk_2` FOREIGN KEY (`User_ID`) REFERENCES `user_abo` (`user_ID`);
+
+--
+-- Beperkingen voor tabel `task`
+--
+ALTER TABLE `task`
+  ADD CONSTRAINT `task_ibfk_1` FOREIGN KEY (`Color_ID`) REFERENCES `color` (`Color_ID`);
 
 --
 -- Beperkingen voor tabel `user_abo`
