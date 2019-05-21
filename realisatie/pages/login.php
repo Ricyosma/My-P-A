@@ -1,5 +1,5 @@
 <?php
-	require '../includes/connection.php';
+	require 'includes/connection.php';
 	if(isset($_POST['submit'])){
 	$user = $ww = $pass = '';
 	$user = $_POST['email'];

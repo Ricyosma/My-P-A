@@ -22,9 +22,6 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/header-footer.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/agenda.css">
-    <link rel="stylesheet" href="css/header-footer.css">
-    <link rel="stylesheet" href="css/dashboard.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
@@ -50,7 +47,7 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="index.php?page=register">Registreren</a>
-              <a class="dropdown-item" href="index.php?page=aanmelden">Aanmelden</a>
+              <a class="dropdown-item" href="index.php?page=login">Aanmelden</a>
               <!-- <div class="dropdown-divider"></div> -->
               <!-- <a class="dropdown-item" href="#">Something else here</a> -->
             </div>
