@@ -29,7 +29,7 @@
             </div>
             <div class="dashInfo">
                 <h2 class="title">Time</h2>
-                <input type="time" name="dash" id="">
+                <input type="time" name="dash" id="taskTime">
             </div>
             <div class="dashInfo">
                 <h2 class="title">Priority</h2>
