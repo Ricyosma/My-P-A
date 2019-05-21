@@ -34,3 +34,8 @@
 .day h4 {
   text-align: center;
 }
+
+#agenda {
+  width: 70% !important;
+  background-color: aqua !important;
+}
