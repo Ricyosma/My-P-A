@@ -1,12 +1,11 @@
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: "Monday Tuesday Wednesday Thuersday Friday Saturday Sunday" "Monday Tuesday Wednesday Thuersday Friday Saturday Sunday" "Monday Tuesday Wednesday Thuersday Friday Saturday Sunday" "Monday Tuesday Wednesday Thuersday Friday Saturday Sunday" "Monday Tuesday Wednesday Thuersday Friday Saturday Sunday" "Monday Tuesday Wednesday Thuersday Friday Saturday Sunday" "Monday Tuesday Wednesday Thuersday Friday Saturday Sunday" "Monday Tuesday Wednesday Thuersday Friday Saturday Sunday" "Monday Tuesday Wednesday Thuersday Friday Saturday Sunday" "Monday Tuesday Wednesday Thuersday Friday Saturday Sunday" "Monday Tuesday Wednesday Thuersday Friday Saturday Sunday" "Monday Tuesday Wednesday Thuersday Friday Saturday Sunday" "Monday Tuesday Wednesday Thuersday Friday Saturday Sunday" "Monday Tuesday Wednesday Thuersday Friday Saturday Sunday" "Monday Tuesday Wednesday Thuersday Friday Saturday Sunday" "Monday Tuesday Wednesday Thuersday Friday Saturday Sunday" "Monday Tuesday Wednesday Thuersday Friday Saturday Sunday" "Monday Tuesday Wednesday Thuersday Friday Saturday Sunday" "Monday Tuesday Wednesday Thuersday Friday Saturday Sunday" "Monday Tuesday Wednesday Thuersday Friday Saturday Sunday" "Monday Tuesday Wednesday Thuersday Friday Saturday Sunday" "Monday Tuesday Wednesday Thuersday Friday Saturday Sunday" "Monday Tuesday Wednesday Thuersday Friday Saturday Sunday";
+  grid-template-rows: 100% 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday";
 }
 
 .Monday { grid-area: Monday;
-  background-color: black;
 }
 
 .Tuesday { grid-area: Tuesday; 
@@ -14,21 +13,24 @@
 }
 
 .Wednesday { grid-area: Wednesday; 
-
 }
 
-.Thuersday { grid-area: Thuersday; 
-
+.Thursday { grid-area: Thursday; 
 }
 
 .Friday { grid-area: Friday; 
-
 }
 
 .Saturday { grid-area: Saturday; 
-
 }
 
 .Sunday { grid-area: Sunday; 
+}
 
+.lane {
+  border-right: 1px solid lightgrey;
+  height: 400px; 
+}
+.day h4 {
+  text-align: center;
 }
