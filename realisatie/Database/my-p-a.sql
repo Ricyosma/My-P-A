@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 20 mei 2019 om 16:00
+-- Gegenereerd op: 21 mei 2019 om 09:39
 -- Serverversie: 10.1.36-MariaDB
 -- PHP-versie: 7.2.11
 
@@ -97,7 +97,8 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`user_ID`, `E_mail`, `Voornaam`, `Achternaam`, `password`) VALUES
 (831873443, '', '', '', 'd41d8cd98f00b204e980'),
-(831873447, 'beheer@mypa.com', 'beheer', 'van beheer', '21232f297a57a5a74389');
+(831873447, 'beheer@mypa.com', 'beheer', 'van beheer', '21232f297a57a5a74389'),
+(831873450, 'beheer2@mypa.com', 'beheer2', 'van beheer', '16bdf9fab24309d554a8');
 
 -- --------------------------------------------------------
 
@@ -182,7 +183,7 @@ ALTER TABLE `task`
 -- AUTO_INCREMENT voor een tabel `user`
 --
 ALTER TABLE `user`
-  MODIFY `user_ID` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=831873448;
+  MODIFY `user_ID` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=831873451;
 
 --
 -- Beperkingen voor geëxporteerde tabellen

@@ -3,18 +3,16 @@
 
 	// require("includes/connection.php");
 
-	// $id = $_SESSION['id'];
+	if (isset($_SESSION['id'])) {
+		$id = $_SESSION['id'];
+	}
 
 	if (isset($id)) {
 		$_head = 'pages/userHeader';
 	} else {
 		$_head = 'pages/header'; 
 	}
-	
-	if ($_page == 'dashboard') {
-		include 'dashboard.php';
-	}
-    
+
 	require($_head.".php");
 
 	if(isset($_GET['page'])){
@@ -34,7 +32,7 @@
 ?>
 <div class="wrapper">
     <?php 
-        require("pages/".$_page.".php");
+		require("pages/".$_page.".php");
     ?>
     
 </div>
