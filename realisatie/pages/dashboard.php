@@ -1,3 +1,14 @@
+<?php
+//require 'includes/connection.php';
+
+$color = "SELECT DISTINCT Color FROM color";
+$result2 = mysqli_query($conn, $query1);
+$options = "";
+ while($row2 = mysqli_fetch_array($result2))
+{
+  $options = $options."<option>$row2[0]</option>";
+    }
+?>
 <div class="left">
     <section id="dashMessage">
         <div id="messageHolder">
