@@ -17,7 +17,7 @@
 
 	if(isset($_GET['page'])){
 
-		$pages=array("home","agenda","dashboard","login","account","register");
+		$pages=array("home","agenda","dashboard","login","account","register","logout");
 
 		if(in_array($_GET['page'], $pages)) {
 

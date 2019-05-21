@@ -10,12 +10,12 @@ html, body, .left {
     min-height: 100% !important;
 }
 html {
-    overflow-y: scroll;
-    scroll-behavior: smooth;
+    overflow-y: scroll !important;
+    scroll-behavior: smooth !important;
 }
 .wrapper {
-    width: 100%;
-    margin-bottom: -40px;
+    width: 100% !important;
+    margin-bottom: -40px !important;
     min-height:100% !important;
 }
 
