@@ -32,6 +32,7 @@ if(isset($_POST['submit'])){
         }
 
         $conn = null;
+        header("Location: login.php?page=login");
     } else {
         $message = "wachtwoord is niet het zelfde";
     }

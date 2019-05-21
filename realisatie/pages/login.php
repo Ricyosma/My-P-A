@@ -27,9 +27,10 @@ if(empty($user) || empty($pass)) {
 }
 }
 ?>
+
 <form action="" id="aan-form" method="post">
 			<div class="form-group">
-<?php if(isset($_POST['submit'])){ echo $message;{ ?>
+<?php if(isset($_POST['submit'])){ echo $message;} ?>
 			</div>
 	    <div class="form-group">
 	      <label for="exampleInputEmail2">Emailadres</label>

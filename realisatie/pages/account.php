@@ -2,7 +2,7 @@
 <?php
 $id = $_SESSION['id'];
 
-	$stmt = "SELECT * FROM user WHERE users_id='$id'";
+	$stmt = "SELECT * FROM user WHERE user_id='$id'";
 
 	$result = mysqli_query($conn, $sql);
 
