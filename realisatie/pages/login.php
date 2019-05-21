@@ -1,5 +1,5 @@
 <?php
-require 'connection.php';
+require '../includes/connection.php';
 $user = $ww = $pass = '';
 $user = $_POST['email'];
 $ww =  $_POST['password'];
@@ -7,12 +7,12 @@ $pass = md5($ww);
 if(empty($user) || empty($pass)) {
 	$message = 'All field are required';
 } else {
-	$query = $conn->prepare("SELECT * FROM user WHERE mail=? AND wachtwoord=?");
+	$query = $conn->prepare("SELECT * FROM user WHERE E_mail=? AND password=?");
 	$query->execute(array($user,$pass));
 	$row = $query->fetch(PDO::FETCH_BOTH);
 	if($query->rowCount() > 0) {
-		$_SESSION['username'] = $user;
-		$id = $row["users_id"];
+		$_SESSION['E_mail'] = $user;
+		$id = $row["user_id"];
 		$vnaam = $row["voornaam"];
 		$anaam = $row['achternaam'];
 		$admin =  $row["admin"];
