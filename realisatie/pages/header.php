@@ -20,6 +20,7 @@
     <title>My P-A</title>
 
     <!-- CSS -->
+    <link rel="stylesheet" href="css/header-footer.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/agenda.css">
     <link rel="stylesheet" href="css/header-footer.css">
@@ -29,10 +30,13 @@
 
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="index.php?page=agenda">Agenda</a></li>
-        <li><a href="index.php?page=dashboard">Dashboard</a></li>
-        <li><a href="index.php?page=account">Account</a></li>
-      </ul>
+
+    <nav id="navbar">
+      <div>
+        <ul>
+          <li><a href="index.php?page=agenda">Agenda</a></li>
+          <li><a href="index.php?page=dashboard">Dashboard</a></li>
+          <li><a href="index.php?page=account">Account</a></li>
+        </ul>
+      </div>
     </nav>

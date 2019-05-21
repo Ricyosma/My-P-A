@@ -8,9 +8,22 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    color: #000;
+    text-decoration: none;
+}
+
 #footer {
     clear: both;
-    position: relative;
+    background-color: red;
+    color: white;
+    text-align: center;
     height: 40px;
     margin-top: -40px;
 }

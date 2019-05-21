@@ -16,15 +16,7 @@ body{
     min-height: 100%;
 }
 
-nav ul {
-    list-style-type: none;
-    }
-
-nav li {
-    float: left;
-}
-
-nav li a {
-    color: #000;
-    text-decoration: none;
+.wrapper {
+    width: 95%;
+    margin: auto, auto, auto, -40px;
 }
