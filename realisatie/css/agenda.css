@@ -36,6 +36,7 @@
 }
 
 #agenda {
-  width: 70% !important;
+  width: 60% !important;
+  float: left !important;
   background-color: aqua !important;
 }
