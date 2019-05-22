@@ -8,10 +8,6 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-#header {
-    width: 100%;
-    /* height: 40px; */
-}
 nav {
     width: 100%;
     height: 150px !important;
@@ -35,19 +31,18 @@ nav ul li {
     color: #fff;
     font-size: 450%;
     text-decoration-line: none;
-    
 }
 
 div#navbar-brand {
     width: 50%;
-    padding-top: 1.9%; 
+    /* padding-top: 1.9%;  */
     padding-left: 3%;
     float: left;
 }
 
 #menu {
     overflow: hidden;
-    padding-top: 4.5%;
+    padding: 4% 0 4% 0;
     margin-right: 5%;
 }
 
@@ -116,12 +111,11 @@ li.dropdown {
     background-color: #7594E7;
     color: #000;
     text-align: center;
-    max-height: 50px;
+    max-height: 20px;
 }
 .footer p {
     width: 100%;
     text-align: center;
     padding: 10px;
-    max-height: 50px;
-
+    background-color: #7594E7;
 } 

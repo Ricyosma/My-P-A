@@ -13,12 +13,6 @@ html {
     overflow-y: scroll !important;
     scroll-behavior: smooth !important;
 }
-.content {
-    min-height: calc(100vh - 70px);
-}
-#agenda {
-    min-height: calc(110vh - 70px);
-}
 
 #hometext{
     max-width: 26%;
@@ -27,7 +21,19 @@ html {
     position: relative;
 }
 
-
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex-shrink: 0;
+}
 #homebook{
     max-height: 100%;
     margin: 15px;
