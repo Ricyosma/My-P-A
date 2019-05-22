@@ -43,8 +43,8 @@
             <a href="javascript:void(0)" class="dropbtn">Dropdown &#9661; </a>
             <div class="dropdown-content">
               <a href="#">Profiel</a>
-              <a href="#">Uitloggen</a>
-
+              <a href="index.php?page=logout">Uitloggen</a>
+              
             </div>
           </li>
         </ul>
