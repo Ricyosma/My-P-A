@@ -11,32 +11,20 @@
                     // $date = $row['Date'];
                     $currentDate = date("Y/m/d");
                     $startdate = strtotime($currentDate);
+                    $startdate = strtotime("-1 day");
                     $enddate = strtotime("+7 days", $startdate);
-
                     while ($startdate < $enddate) {
                         $startdate = strtotime("+1 day", $startdate);
 ?>
                         <div class="day">
-                            <h4>
-                                <?php 
-                                    echo date("l", $startdate);
-                                ?>
-                            </h4> 
-                            <div class="
-                                
-                                <?php 
-                                    echo date("l", $startdate);
-                                ?> 
-                            lane">
-                    
                             <h4><?php  echo date("l", $startdate);?></h4> 
                             <div class="<?php echo date("l", $startdate);?> lane">
 <?php 
                             $dayQuery = $conn->prepare("SELECT * FROM task WHERE Date=?");
                             $dayQuery->execute(array(date("Y/m/d", $startdate)));
-                            $result = $dayQuery->setFetchMode(PDO::FETCH_ASSOC); 
+                            $result2 = $dayQuery->setFetchMode(PDO::FETCH_ASSOC); 
                             if($dayQuery->rowCount() > 0) {
-                                while($row = $dayQuery->fetch(PDO::FETCH_ASSOC)){
+                                while($row2 = $dayQuery->fetch(PDO::FETCH_ASSOC)){
                                     echo $row['Task'];
                                 }
                             }
