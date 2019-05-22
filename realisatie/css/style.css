@@ -69,3 +69,22 @@ color: #fff; */
     margin: 3% 0% 3% 0%;
     text-decoration: none;
 }
+
+table {
+    margin-bottom: 10%;       
+    margin-left: 5%;
+}
+
+table input {
+    padding: 3%;
+    width: 120%;
+    border: .5px solid  #3a50be36;  
+    border-radius: 5px;
+}
+
+table input:focus {
+    padding: 3%;
+    width: 120%;
+    border: .5px #3a50be solid;
+    border-radius: 5px;
+}
