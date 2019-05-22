@@ -27,6 +27,8 @@ nav ul {
 
 nav ul li {
     display: inline-block;
+    border-radius: 5px;
+    border: 1px solid white; 
 }
 
 .navbar-brand {
@@ -73,7 +75,8 @@ nav li a, .dropbtn {
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-    text-transform: uppercase;  
+    /* text-transform: uppercase;   */
+    background-color: rgba(240, 244, 255, 0.233);
 }
 
 li.dropdown {
