@@ -104,3 +104,8 @@ table input:focus {
     border: .5px #3a50be solid;
     border-radius: 5px;
 }
+
+.spacing { 
+    border-collapse:separate; 
+    border-spacing:0 15px;
+}

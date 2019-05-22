@@ -32,7 +32,7 @@
 			<div class="form-group">
 <?php if(isset($_POST['submit'])){ echo $message;} ?>
 			</div>
-	<table>
+	<table class="spacing">
 		<tr>
 	    <div class="form-group">
 	      <td><label for="exampleInputEmail2">Emailadres</label> </td>

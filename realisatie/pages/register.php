@@ -37,7 +37,7 @@
     }
 ?>
 <form action="" id="reg-form" method="post">
-    <table>
+    <table class="spacing">
         <tr>
             <div class="form-group">
                 <td> <label for="exampleInputEmail2">Voornaam</label> </td>
