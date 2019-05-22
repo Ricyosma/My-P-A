@@ -1,15 +1,14 @@
 <?php 
     $id = $_SESSION['id'];
-    
-    $agendaQuery = $conn->prepare("SELECT Task_ID FROM agenda WHERE user_ID =?");
-    $agendaQuery->execute(array($id));
-    $row = $agendaQuery->fetch(PDO::FETCH_BOTH);
-    if($agendaQuery->rowCount() > 0) {
-        $taskId = $row['Task_ID'];
-        echo $agendaId;
-    } else {
-        // $_SESSION['dashmessage'] = $agendaQuery.'error';
-    }
+    // $agendaQuery = $conn->prepare("SELECT Task_ID FROM agenda WHERE user_ID =?");
+    // $agendaQuery->execute(array($id));
+    // $row = $agendaQuery->fetch(PDO::FETCH_BOTH);
+    // if($agendaQuery->rowCount() > 0) {
+    //     $taskId = $row['Task_ID'];
+    //     echo $agendaId;
+    // } else {
+    //     $_SESSION['dashmessage'] = $agendaQuery.'error';
+    // }
     
 ?>
 
