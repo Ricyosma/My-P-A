@@ -26,7 +26,6 @@
 
         $color_name = $_POST['Color'];
 
-        echo $endTime;
         $query = $conn->prepare("SELECT Color_ID FROM Color WHERE Color=?");
         $query->execute(array($color_name));
         $row = $query->fetch(PDO::FETCH_BOTH);
@@ -35,7 +34,17 @@
         } else {
             $_SESSION['dashmessage'] = $query.'error';
         }
-        
+
+        $taskQuery = $conn->prepare("SELECT Task_ID FROM task");
+        $row = $taskQuery->fetch(PDO::FETCH_BOTH);
+        if($taskQuery->rowCount() > 0) {
+            $task = $row['Task_ID'];
+            echo $row['Task_ID'];
+        } else {
+            echo 'fail';
+        }
+        echo $task;
+
         try {
             // set the PDO error mode to exception
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -45,9 +54,10 @@
             $conn->exec($sql);
             $taskOutput = 'Task added on:' . ' '. $date . ' ' . 'at' . ' ' . $time;
             $_SESSION['dashmessage'] = $taskOutput;
-
+            // $sql2 = "INSERT INTO agenda (User_ID, Task_ID)
+            //         VALUES ('$id', '$task')";
+            // $conn->exec($sql2);  
             header("Location: index.php?page=dashboard");
-
         } catch(PDOException $e) {
             echo $sql . "<br>" . $e->getMessage();
         }
