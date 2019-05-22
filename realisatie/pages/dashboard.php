@@ -1,7 +1,5 @@
 <?php
     require 'includes/connection.php';
-
-
     $options = "Kies uw kleur";
     $stmt = $conn->query("SELECT DISTINCT Color FROM color");
     while ($row = $stmt->fetch()){
@@ -9,6 +7,9 @@
     }
 
     if (isset($_POST['submit'])) {
+
+        $_SESSION['dashmessage'] = '';
+
         $taskName = $time = $date = $priority = $description = '';
 
         $taskName = $_POST['taskName'];
@@ -29,7 +30,7 @@
         if($query->rowCount() > 0) {
             $color_id = $row['Color_ID'];
         } else {
-            $_SESSION['dashmessage'] = 'error';
+            $_SESSION['dashmessage'] = $query.'error';
         }
         
         try {
@@ -39,7 +40,8 @@
                     VALUES ('$taskName','$priority', '$description', '$color_id', '$date', '$time')";
             // use exec() because no results are returned
             $conn->exec($sql);
-
+            $taskOutput = 'Task added on:' . ' '. $date . ' ' . 'at' . ' ' . $time;
+            $_SESSION['dashmessage'] = $taskOutput;
             header("Location: index.php?page=dashboard");
         } catch(PDOException $e) {
             echo $sql . "<br>" . $e->getMessage();
@@ -50,15 +52,10 @@
 <div class="left">
     <section id="dashMessage">
         <div id="messageHolder">
-            <h3>Task change output:</h3>
+            <h3>Most recent add:</h3>
             <div id="messageOutput">
                 <?php 
-                    if ($dashMessage = 'There are no changes made.') {
-                    
-                    } else {
-                        $dashMessage = 'There are no changes made.';
-                    }
-                    echo $dashMessage;
+                    echo $_SESSION['dashmessage'];
                 ?>
             </div>
         </div>
