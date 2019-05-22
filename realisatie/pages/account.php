@@ -1,9 +1,23 @@
 
 <?php
-$id = $_SESSION['id'];
+//$id = $_SESSION['id'];
 
-	
+// $sql = mysql_query("SELECT First_name, Last_name, E_mail, user_ID FROM user 	");
+// if (!$result) {
+//     echo 'Could not run query: ' . mysql_error();
+//     exit;
+// }
+$servername = "localhost";
+$username = "root";
+$password = "";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password);
+
+$sql = "SELECT First_name, Last_name, E_mail, user_ID FROM user";
+
 ?>
+
 <div id="account">
 	<div class="col-lg-6 col-sm-6">
 			<div class="card hovercard">
@@ -13,43 +27,37 @@ $id = $_SESSION['id'];
 					<div class="useravatar">
 
 					</div>
-					<div class="card-info"> <span class="card-title"><?php echo $naam; ?></span>
+					<!-- <div class="card-info"> <span class="card-title"><?php echo $naam; ?></span>
 
 
 
-					</div>
+					</div> -->
 			</div>
-			<div class="btn-pref btn-group btn-group-justified btn-group-lg" role="group" aria-label="...">
-					<div class="btn-group" role="group">
-						<button type="button" id="stars" class="btn btn-primary" href="#tab1" data-toggle="tab">
-							<div class="hidden-xs">Profile</div>
-						</button>
-					</div>
-			</div>
+
 			<div class="well">
 				<div class="tab-content">
 					<div class="tab-pane fade in active" id="tab1">
 						<table class="table">
 							<tr>
-								<td>Volledige naam</td>
-								<td><?php echo $naam; ?></td>
+								<td>First name:</td>
+								<td><?php echo $First_name; ?></td>
 							</tr>
 							<tr>
-								<td>Adres</td>
-								<td><?php echo $adres; ?></td>
+								<td>Last name:</td>
+								<td><?php echo $Last_name; ?></td>
 							</tr>
 							<tr>
-								<td>Woonplaats</td>
-								<td><?php echo $woonplaats; ?></td>
+								<td>Email:</td>
+								<td><?php echo $E_mail; ?></td>
 							</tr>
 							<tr>
-								<td>Email</td>
-								<td><?php echo $email; ?></td>
+								<td>User ID:</td>
+								<td><?php echo $user_ID; ?></td>
 							</tr>
 						</table>
 					</div>
 				</div>
 			</div>
   </div>
-</div>    
+</div> 
 
