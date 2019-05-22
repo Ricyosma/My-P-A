@@ -3,7 +3,7 @@
         <?php 
             $id = $_SESSION['id'];
 
-            $taskQuery = $conn->prepare("SELECT * FROM task where User_ID=?");
+            $taskQuery = $conn->prepare("SELECT task FROM task where User_ID=?");
             $taskQuery->execute(array($id));
             $result = $taskQuery->setFetchMode(PDO::FETCH_ASSOC); 
             if($taskQuery->rowCount() > 0) {
