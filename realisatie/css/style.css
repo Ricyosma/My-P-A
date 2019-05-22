@@ -19,6 +19,22 @@ html {
     min-height:100% !important;
 }
 
+#hometext{
+    max-width: 26%;
+    left: 10%;
+    top: 30px;
+    position: relative;
+}
+
+
+#homebook{
+    max-height: 100%;
+    margin: 15px;
+    padding: 0;
+    z-index: -1;
+    position: absolute;
+}
+
 /* task 1 (in agenda) : 
 width: 587.5px;
 height: 74px;
