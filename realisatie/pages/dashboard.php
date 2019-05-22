@@ -16,7 +16,7 @@
         
         $time = $_POST['time'];
 
-        $endTime = $_Post['endTime'];
+        $endTime = $_POST['endTime'];
 
         $date = $_POST['date'];
 
@@ -26,6 +26,7 @@
 
         $color_name = $_POST['Color'];
 
+        echo $endTime;
         $query = $conn->prepare("SELECT Color_ID FROM Color WHERE Color=?");
         $query->execute(array($color_name));
         $row = $query->fetch(PDO::FETCH_BOTH);
