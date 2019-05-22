@@ -97,7 +97,10 @@ li.dropdown {
   text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #4e67eb;}
+.dropdown-content a:hover {
+    background-color: #3a50be;
+    transition-duration: 1.5s;
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
