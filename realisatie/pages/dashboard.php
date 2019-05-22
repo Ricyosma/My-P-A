@@ -44,7 +44,15 @@
             $conn->exec($sql);
             $taskOutput = 'Task added on:' . ' '. $date . ' ' . 'at' . ' ' . $time;
             $_SESSION['dashmessage'] = $taskOutput;
+           /* $conn2->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $sql2 = "INSERT INTO agenda_tasks (Task_ID) 
+                    VALUES ('$taskName','$priority', '$description', '$color_id', '$date', '$time', '$endTime')";
+
+
+            // use exec() because no results are returned
+            $conn->exec($sql);*/
             header("Location: index.php?page=dashboard");
+
         } catch(PDOException $e) {
             echo $sql . "<br>" . $e->getMessage();
         }
