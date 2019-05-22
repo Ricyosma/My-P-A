@@ -79,11 +79,11 @@
             </div>
             <div class="dashInfo">
                 <h3 class="title">Time</h3>
-                <input type="time" name="time" id="taskTime" require>
-            </div>
-            <div class="dashInfo">
-                <h3 class="title">End time</h3>
-                <input type="time" name="endTime" id="taskEndTime" require>
+                <label for="time">Start</label>
+                <input type="time" name="time" class="taskTime" require>
+                <br>
+                <label for="endTime">finished</label>
+                <input type="time" name="endTime" class="taskTime" require>
             </div>
             <div class="dashInfo">
                 <h3 class="title">Date</h3>
