@@ -38,7 +38,7 @@ $id = $_SESSION['id'];
 			<div class="well">
 				<div class="tab-content">
 					<div class="tab-pane fade in active" id="tab1">
-						<table class="table">
+						<table class="profiel">
 							<tr>
 								<td>First name:</td>
 								<td><?php echo $vnaam; ?></td>
