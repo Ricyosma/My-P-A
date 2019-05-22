@@ -1,6 +1,7 @@
 <?php
 require 'includes/connection.php';
 
+include_once 'includes/add.php';
 
 $options = "Kies uw kleur";
 $stmt = $conn->query("SELECT DISTINCT Color FROM color");

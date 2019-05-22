@@ -13,6 +13,8 @@
         $priority = $_POST['range'];
         
         $description = $_POST['taskDisc'];
+
+        $color = $_POST['Color'];
             
         try {
             // set the PDO error mode to exception
@@ -21,16 +23,15 @@
                     VALUES ('$taskName','$priority', '$description','$date','$time')";
             // use exec() because no results are returned
             $conn->exec($sql);
-            echo "New login succesfully created";
+            echo "Add succes full";
+
         // header("Location: ../index.php");
+        } catch(PDOException $e) {
+            echo $sql . "<br>" . $e->getMessage();
         }
-            catch(PDOException $e) {
-                echo $sql . "<br>" . $e->getMessage();
-            }
-            $conn = null;
-            header("Location: index.php?page=dashboard");
-        } else {
-            $message = "wachtwoord is niet het zelfde";
+        $conn = null;
+        header("Location: index.php?page=dashboard");
+    } else {
+        // $message = "wachtwoord is niet het zelfde";
         }
-    }
 ?>
