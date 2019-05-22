@@ -1,4 +1,3 @@
-
 <section id="agenda">
    <div class="grid-container">
         <?php 
