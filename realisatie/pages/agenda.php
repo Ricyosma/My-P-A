@@ -37,11 +37,6 @@
                         </div>
                         <?php
                 }
-                // }
-            // } 
-            // else {
-            //     echo 'fail' ;
-            // }
 ?>
     </div>
 </section>
