@@ -40,20 +40,20 @@ $id = $_SESSION['id'];
 					<div class="tab-pane fade in active" id="tab1">
 						<table class="profiel">
 							<tr>
-								<td>First name:</td>
-								<td><?php echo $vnaam; ?></td>
+								<td><h1>First name:</h1></td>
+								<td><h1><?php echo $vnaam; ?></h1></td>
 							</tr>
 							<tr>
-								<td>Last name:</td>
-								<td><?php echo $anaam; ?></td>
+								<td><h1>Last name:</h1></td>
+								<td><h1><?php echo $anaam; ?></h1></td>
 							</tr>
 							<tr>
-								<td>Email:</td>
-								<td><?php echo $mail; ?></td>
+								<td><h1>Email:></h1></td>
+								<td><h1><?php echo $mail; ?></h1></td>
 							</tr>
 							<tr>
-								<td>User ID:</td>
-								<td><?php echo $id; ?></td>
+								<td><h1>User ID:</h1></td>
+								<td><h1><?php echo $id; ?></h1></td>
 							</tr>
 						</table>
 					</div>
