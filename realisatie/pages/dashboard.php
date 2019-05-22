@@ -55,7 +55,9 @@
             <h3>Most recent add:</h3>
             <div id="messageOutput">
                 <?php 
-                    echo $_SESSION['dashmessage'];
+                   if(isset($_POST['submit'])){
+                       echo $_SESSION['dashmessage'];
+                } 
                 ?>
             </div>
         </div>
