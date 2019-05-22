@@ -7,7 +7,7 @@
             $taskQuery->execute(array($id));
             $result = $taskQuery->setFetchMode(PDO::FETCH_ASSOC); 
             if($taskQuery->rowCount() > 0) {
-                while($row = $taskQuery->fetch(PDO::FETCH_ASSOC)){
+                if($row = $taskQuery->fetch(PDO::FETCH_ASSOC)){
                     // $date = $row['Date'];
                     $currentDate = date("Y/m/d");
                     $startdate = strtotime($currentDate);
@@ -24,8 +24,9 @@
                             $dayQuery->execute(array(date("Y/m/d", $startdate)));
                             $result2 = $dayQuery->setFetchMode(PDO::FETCH_ASSOC); 
                             if($dayQuery->rowCount() > 0) {
-                                while($row2 = $dayQuery->fetch(PDO::FETCH_ASSOC)){
+                                if($row2 = $dayQuery->fetch(PDO::FETCH_ASSOC)){
                                     echo $row['Task'];
+                                    
                                 }
                             }
 ?>

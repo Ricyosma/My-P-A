@@ -32,7 +32,7 @@
         if($query->rowCount() > 0) {
             $color_id = $row['Color_ID'];
         } else {
-            $_SESSION['dashmessage'] = $query.'error';
+            // $_SESSION['dashmessage'] = $query.'error';
         }
 
         try {
@@ -99,7 +99,7 @@
             </div>
             <div class="dashInfo">
                 <h3>Color</h3>
-                <select name="Color" id="" return>
+                <select name="Color" id="">
                     <option><?php echo $options;?></option>
                 </select>
             </div>
