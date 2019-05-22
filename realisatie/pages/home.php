@@ -31,5 +31,6 @@
                 Je gaat naar de Agenda pagina, drukt op dashboard en maakt een taak aan met de tijd, datum, prioriteit, kleur en beschrijving. <br>
                 Dit doe je totdat je agenda vol is en je kan aan het werk. </p>
     </div>
+    <div id='fill1'></div>
 </body>
 </html>
