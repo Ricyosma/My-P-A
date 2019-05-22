@@ -30,7 +30,7 @@
   </head>
   <body>
     <nav>
-        <div id="navbar-brand"><a class="navbar-brand" href="index.php?page=home">My P-A</a></div>
+        <div id="navbar-brand"><a class="navbar-brand" href="index.php?page=agenda">My P-A</a></div>
       <div id="menu">
         <ul>
           <li>

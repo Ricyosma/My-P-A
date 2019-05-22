@@ -37,27 +37,41 @@
     }
 ?>
 <form action="" id="reg-form" method="post">
-        <div class="form-group">
-            <label for="exampleInputEmail2">Voornaam</label>
-            <input type="firstname" class="form-control" id="exampleInputEmail2" placeholder="Vul uw voornaam in" required name="Voornaam">
-        </div>
-        <div class="form-group">
-            <label for="exampleInputEmail2">Achternaam</label>
-            <input type="lastname" class="form-control" id="exampleInputEmail2" placeholder="Vul uw achternaam in" required name="Achternaam">
-        </div>
-        <div class="form-group">
-            <label for="exampleInputEmail2">Emailadres</label>
-            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Vul uw email in" required name="E-mail">
-            <small id="emailHelp1" class="form-text">Uw email zal nooit worden gedeeld met andere partijen.</small> 
-        </div>
-        <div class="form-group">
-            <label for="exampleInputPassword1">Wachtwoord</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Wachtwoord" required name="password">
-            <br>
-            <label for="exampleInputPassword2">Herhaal wachtwoord</label>
-            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Herhaal uw wachtwoord" required name="passwordR">
-            <h4> <?php if(isset($_POST['submit'])){
-            echo $message;}?> </h4>
-        </div>
-    <button type="submit" name='submit' class="btn-sub btn btn-primary">Registreren</button>
-  </form>
+    <table>
+        <tr>
+            <div class="form-group">
+                <td> <label for="exampleInputEmail2">Voornaam</label> </td>
+                <td> <input type="firstname" class="form-control" id="exampleInputEmail2" placeholder="Vul uw voornaam in" required name="Voornaam"> </td>
+            </div>
+        </tr>
+        <tr>
+            <div class="form-group">
+                <td> <label for="exampleInputEmail2">Achternaam</label> </td>
+                <td> <input type="lastname" class="form-control" id="exampleInputEmail2" placeholder="Vul uw achternaam in" required name="Achternaam"></td>
+            </div>
+        </tr>
+        <tr>
+            <div class="form-group">
+                <td> <label for="exampleInputEmail2">Emailadres</label> </td>
+                <td> <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Vul uw email in" required name="E-mail"> </td>
+                <small id="emailHelp1" class="form-text">Uw email zal nooit worden gedeeld met andere partijen.</small> 
+            </div>
+        </tr>
+        <tr>
+            <div class="form-group">
+                <td> <label for="exampleInputPassword1">Wachtwoord</label> </td>
+                <td> <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Wachtwoord" required name="password"> </td>
+                <br>
+        </tr>
+        <tr>
+                <td> <label for="exampleInputPassword2">Herhaal wachtwoord</label> </td>
+                <td> <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Herhaal uw wachtwoord" required name="passwordR"> </td>
+                <h4> <?php if(isset($_POST['submit'])){
+                echo $message;}?> </h4>
+            </div>
+        </tr>
+        <tr>
+            <td> <button type="submit" name='submit' class="btn-sub btn btn-primary">Registreren</button> </td>
+        </tr>
+    </table>
+</form>
