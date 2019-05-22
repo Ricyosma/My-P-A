@@ -54,7 +54,6 @@
             <div class="form-group">
                 <td> <label for="exampleInputEmail2">Emailadres</label> </td>
                 <td> <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Vul uw email in" required name="E-mail"> </td> </tr>
-             <tfoot>  <tr><td> <small id="emailHelp1" class="form-text">Uw email zal nooit worden gedeeld met andere partijen.</small> </tr></td></tfoot>
             </div>
         </tr>
         <tr>
@@ -73,5 +72,6 @@
         <tr>
             <td> <button type="submit" name='submit' class="submit">Registreren</button> </td>
         </tr>
+        <tfoot><tr><td> <small id="emailHelp1" class="form-text">Uw email zal nooit worden gedeeld met andere partijen.</small> </tr></td></tfoot>
     </table>
 </form>
