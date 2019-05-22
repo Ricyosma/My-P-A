@@ -32,13 +32,20 @@
 			<div class="form-group">
 <?php if(isset($_POST['submit'])){ echo $message;} ?>
 			</div>
+	<table>
+		<tr>
 	    <div class="form-group">
-	      <label for="exampleInputEmail2">Emailadres</label>
-	      <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Vul uw email in" require name="email">
-	      <small id="emailHelp1" class="form-text">Uw email zal nooit worden gedeeld met andere partijen.</small> </div>
-	    <div class="form-group">
-	      <label for="exampleInputPassword1">Wachtwoord</label>
-	      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Uw wachtwoord" require name="password">
-      </div>
-	    <button type="submit" name="submit" class="btn-sub btn btn-primary">Aanmelden</button>
+	      <td><label for="exampleInputEmail2">Emailadres</label> </td>
+	      <td> <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Vul uw email in" require name="email"> </td>
+		  <small id="emailHelp1" class="form-text">Uw email zal nooit worden gedeeld met andere partijen.</small> </div>
+		</tr>
+			<tr>
+					<div class="form-group">
+					<td> <label for="exampleInputPassword1">Wachtwoord</label> </td>
+					<td> <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Uw wachtwoord" require name="password"> </td>
+				</div>
+			</tr>
+		<tr>
+		<td> <button type="submit" name="submit" class="btn-sub btn btn-primary">Aanmelden</button> </td>
+		</tr>
   </form>
