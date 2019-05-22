@@ -102,7 +102,7 @@ li.dropdown {
 
 .dropdown-content a:hover {
     background-color: #3a50be;
-    transition-duration: 1s;
+    transition-duration: 0.8s;
 }
 
 .dropdown:hover .dropdown-content {
