@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 21 mei 2019 om 14:17
+-- Gegenereerd op: 22 mei 2019 om 11:22
 -- Serverversie: 10.1.36-MariaDB
 -- PHP-versie: 7.2.11
 
@@ -112,8 +112,18 @@ CREATE TABLE `task` (
   `Description` text NOT NULL,
   `Color_ID` int(20) NOT NULL,
   `Date` date NOT NULL,
-  `Time` time NOT NULL
+  `Time` time NOT NULL,
+  `End_time` time NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `task`
+--
+
+INSERT INTO `task` (`Task_ID`, `Task`, `Priority`, `Description`, `Color_ID`, `Date`, `Time`, `End_time`) VALUES
+(1, 'test', '5', 'hellu', 3, '2019-05-22', '16:12:20', '00:00:00'),
+(2, 'going home', '3', 'vergeet niet te tanken dingus!!!!', 3, '2019-05-22', '13:19:00', '00:00:00'),
+(3, 'going home', '3', 'k;lkl;', 5, '2019-05-22', '18:25:00', '00:00:00');
 
 -- --------------------------------------------------------
 
@@ -136,7 +146,8 @@ CREATE TABLE `user` (
 INSERT INTO `user` (`user_ID`, `E_mail`, `First_name`, `Last_name`, `passw`) VALUES
 (831873457, 'beheer@mypa.com', 'My-P-A', 'beheer', '21232f297a57a5a743894a0e4a801fc3'),
 (831873458, 'beep@beepbeep.com', 'beep', 'beep', '1284e53a168a5ad955485a7c83b10de0'),
-(831873461, 'Ricyosma@hotmail.nl', 'riccardo', 'van dam', '1284e53a168a5ad955485a7c83b10de0');
+(831873461, 'Ricyosma@hotmail.nl', 'riccardo', 'van dam', '1284e53a168a5ad955485a7c83b10de0'),
+(831873464, 'Ricyosma@gmail.com', 'Riccardo', 'Van Dam', 'd5a5b2edb04966f0b8c29faf4f92a082');
 
 -- --------------------------------------------------------
 
@@ -242,13 +253,13 @@ ALTER TABLE `factuur`
 -- AUTO_INCREMENT voor een tabel `task`
 --
 ALTER TABLE `task`
-  MODIFY `Task_ID` int(255) NOT NULL AUTO_INCREMENT;
+  MODIFY `Task_ID` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT voor een tabel `user`
 --
 ALTER TABLE `user`
-  MODIFY `user_ID` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=831873463;
+  MODIFY `user_ID` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=831873465;
 
 --
 -- Beperkingen voor geëxporteerde tabellen
