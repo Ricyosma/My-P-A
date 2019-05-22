@@ -1,42 +1,40 @@
 <?php
 
 	require_once('includes/connection.php');
-if(isset($_POST['submit'])){
-	$message = $voornaam = $achternaam = $adres = $woonplaats = $postcode = $telefoon =  $mail = $password = $pwd = '';
+    if(isset($_POST['submit'])){
+        $message = $voornaam = $achternaam = $adres = $woonplaats = $postcode = $telefoon =  $mail = $password = $pwd = '';
 
-    $voornaam = $_POST['Voornaam'];
-    
-	$achternaam = $_POST['Achternaam'];
+        $voornaam = $_POST['Voornaam'];
+        
+        $achternaam = $_POST['Achternaam'];
 
-    $mail = $_POST['E-mail'];
-    
-	$pwd = $_POST['password'];
-	$pwdR = $_POST['passwordR'];
+        $mail = $_POST['E-mail'];
+        
+        $pwd = $_POST['password'];
+        $pwdR = $_POST['passwordR'];
 
-    $password = MD5($pwd);
+        $password = MD5($pwd);
     
-    if ($pwd == $pwdR) {
-        try {
-        // set the PDO error mode to exception
-        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $sql = "INSERT INTO user (First_name, Last_name, E_mail, passw) 
-                VALUES ('$voornaam','$achternaam', '$mail','$password')";
-        // use exec() because no results are returned
-        $conn->exec($sql);
-        echo "New login succesfully created";
-       // header("Location: ../index.php");
+        if ($pwd == $pwdR) {
+            try {
+                // set the PDO error mode to exception
+                $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                $sql = "INSERT INTO user (First_name, Last_name, E_mail, passw) 
+                        VALUES ('$voornaam','$achternaam', '$mail','$password')";
+                // use exec() because no results are returned
+                $conn->exec($sql);
+                echo "New login succesfully created";
+            // header("Location: ../index.php");
+            }
+            catch(PDOException $e) {
+                echo $sql . "<br>" . $e->getMessage();
+            }
+            $conn = null;
+            header("Location: index.php?page=login");
+        } else {
+            $message = "wachtwoord is niet het zelfde";
         }
-        catch(PDOException $e)
-        {
-        echo $sql . "<br>" . $e->getMessage();
-        }
-
-        $conn = null;
-        header("Location: index.php?page=login");
-    } else {
-        $message = "wachtwoord is niet het zelfde";
     }
-}
 ?>
 <form action="" id="reg-form" method="post">
         <div class="form-group">

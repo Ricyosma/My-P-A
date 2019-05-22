@@ -40,7 +40,11 @@ $options = "";
             </div>
             <div class="dashInfo">
                 <h3 class="title">Time</h3>
-                <input type="time" name="dash" id="taskTime">
+                <input type="time" name="time" id="taskTime">
+            </div>
+            <div class="dashInfo">
+                <h3 class="title">Date</h3>
+                <input type="date" name="date" id="">
             </div>
             <div class="dashInfo">
                 <h3 class="title">Priority</h3>
