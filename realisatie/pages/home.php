@@ -19,17 +19,17 @@
   </head>
 <body>
     <div class="cola">
-        <h3 style="text-align:left">Welkom bij My Personal Agenda, 
+    <img src="../realisatie/css/Images/logotje.png" id="homebook">
+    <br><br><br>
+        <h3 id='hometext' style="text-align:left;">Welkom bij My Personal Agenda, 
             met deze website wordt plannen een makkie!</h3>
 
-            <p> Aanmelden? Zo doe je dat: <br>
+            <p id='hometext'> Aanmelden? Zo doe je dat: <br>
                 Je maakt een account aan (ben je onder de 18 moet je toestemming aan je ouders vragen),<br>
                 je kiest een abonnement doet de eerste betaling, checkt je mail en je bent klaar! <br>
                 Aangemeld en wat nu? <br>
                 Je gaat naar de Agenda pagina, drukt op dashboard en maakt een taak aan met de tijd, datum, prioriteit, kleur en beschrijving. <br>
                 Dit doe je totdat je agenda vol is en je kan aan het werk. </p>
-
-
     </div>
 </body>
 </html>
