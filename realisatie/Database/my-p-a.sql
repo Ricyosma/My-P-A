@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 22 mei 2019 om 11:22
+-- Gegenereerd op: 22 mei 2019 om 13:07
 -- Serverversie: 10.1.36-MariaDB
 -- PHP-versie: 7.2.11
 
@@ -50,17 +50,6 @@ INSERT INTO `abo` (`Abo_ID`, `Class`, `Price`) VALUES
 
 CREATE TABLE `agenda` (
   `User_ID` int(255) NOT NULL,
-  `Agenda_ID` int(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Tabelstructuur voor tabel `agenda_tasks`
---
-
-CREATE TABLE `agenda_tasks` (
-  `Agenda_ID` int(255) NOT NULL,
   `Task_ID` int(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -123,7 +112,8 @@ CREATE TABLE `task` (
 INSERT INTO `task` (`Task_ID`, `Task`, `Priority`, `Description`, `Color_ID`, `Date`, `Time`, `End_time`) VALUES
 (1, 'test', '5', 'hellu', 3, '2019-05-22', '16:12:20', '00:00:00'),
 (2, 'going home', '3', 'vergeet niet te tanken dingus!!!!', 3, '2019-05-22', '13:19:00', '00:00:00'),
-(3, 'going home', '3', 'k;lkl;', 5, '2019-05-22', '18:25:00', '00:00:00');
+(3, 'going home', '3', 'k;lkl;', 5, '2019-05-22', '18:25:00', '00:00:00'),
+(4, 'going home', '3', '2232', 4, '2019-05-22', '07:22:00', '00:00:00');
 
 -- --------------------------------------------------------
 
@@ -174,15 +164,8 @@ ALTER TABLE `abo`
 -- Indexen voor tabel `agenda`
 --
 ALTER TABLE `agenda`
-  ADD PRIMARY KEY (`User_ID`,`Agenda_ID`),
-  ADD KEY `User_ID` (`User_ID`,`Agenda_ID`),
-  ADD KEY `Agenda_ID` (`Agenda_ID`);
-
---
--- Indexen voor tabel `agenda_tasks`
---
-ALTER TABLE `agenda_tasks`
-  ADD PRIMARY KEY (`Agenda_ID`),
+  ADD PRIMARY KEY (`User_ID`,`Task_ID`),
+  ADD KEY `User_ID` (`User_ID`,`Task_ID`),
   ADD KEY `Task_ID` (`Task_ID`);
 
 --
@@ -232,12 +215,6 @@ ALTER TABLE `abo`
   MODIFY `Abo_ID` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT voor een tabel `agenda_tasks`
---
-ALTER TABLE `agenda_tasks`
-  MODIFY `Agenda_ID` int(255) NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT voor een tabel `color`
 --
 ALTER TABLE `color`
@@ -253,7 +230,7 @@ ALTER TABLE `factuur`
 -- AUTO_INCREMENT voor een tabel `task`
 --
 ALTER TABLE `task`
-  MODIFY `Task_ID` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `Task_ID` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT voor een tabel `user`
@@ -270,13 +247,7 @@ ALTER TABLE `user`
 --
 ALTER TABLE `agenda`
   ADD CONSTRAINT `agenda_ibfk_1` FOREIGN KEY (`User_ID`) REFERENCES `user` (`user_ID`),
-  ADD CONSTRAINT `agenda_ibfk_2` FOREIGN KEY (`Agenda_ID`) REFERENCES `agenda_tasks` (`Agenda_ID`);
-
---
--- Beperkingen voor tabel `agenda_tasks`
---
-ALTER TABLE `agenda_tasks`
-  ADD CONSTRAINT `agenda_tasks_ibfk_1` FOREIGN KEY (`Task_ID`) REFERENCES `task` (`Task_ID`);
+  ADD CONSTRAINT `agenda_ibfk_2` FOREIGN KEY (`Task_ID`) REFERENCES `task` (`Task_ID`);
 
 --
 -- Beperkingen voor tabel `factuur`
