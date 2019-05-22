@@ -111,5 +111,12 @@ li.dropdown {
 
 table {
     margin-bottom: 10%;       
-    margin-left: 10%; .
+    margin-left: 5%;
+}
+
+table input {
+    padding: 3%;
+    width: 120%;
+    border: #000 solid;
+    border-radius: 5px;
 }
