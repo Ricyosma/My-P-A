@@ -24,7 +24,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/header-footer.css">
     <link rel="stylesheet" href="css/style.css">
-     <link rel="stylesheet" href="css/agenda.css">
+    <link rel="stylesheet" href="css/agenda.css">
     <link rel="stylesheet" href="css/dashboard.css">
 
   </head>

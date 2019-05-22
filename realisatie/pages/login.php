@@ -1,18 +1,18 @@
 <?php
 	require 'includes/connection.php';
 	if(isset($_POST['submit'])){
-	$user = $ww = $pass = '';
-	$user = $_POST['email'];
+	$mail = $ww = $pass = '';
+	$mail = $_POST['email'];
 	$ww =  $_POST['password'];
 	$pass = md5($ww);
-	if(empty($user) || empty($pass)) {
+	if(empty($mail) || empty($pass)) {
 		$message = 'All fields are required';
 	} else {
 		$query = $conn->prepare("SELECT * FROM user WHERE E_mail=? AND passw=?");
-		$query->execute(array($user,$pass));
+		$query->execute(array($mail,$pass));
 		$row = $query->fetch(PDO::FETCH_BOTH);
 		if($query->rowCount() > 0) {
-			$_SESSION['E_mail'] = $user;
+			$_SESSION['E_mail'] = $mail;
 			$id = $row["user_ID"];
 			$vnaam = $row["First_name"];
 			$anaam = $row['Last_name'];
