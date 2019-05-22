@@ -48,6 +48,7 @@
 		<tr>
 		<td> <button type="submit" name="submit" class="submit">Aanmelden</button> </td>
 		</tr>
+		<br>
 		<tfoot><tr><td> <small id="emailHelp1" class="form-text">Uw email zal nooit worden gedeeld met andere partijen.</small> </td></tr></tfoot>
 	</table>
   </form>
