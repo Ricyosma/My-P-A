@@ -57,3 +57,19 @@ color: #fff; */
     margin-bottom: 10%;       
     margin-left: 10%; 
 }
+
+.submit {
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid black;
+    color: #fff;
+    background-color: #7594E7; 
+    text-align: center;
+    padding: 14px 16px;
+    margin: 3% 0% 3% 0%;
+    text-decoration: none;
+}
+
+table tr {
+    margin-top: 500%;
+}

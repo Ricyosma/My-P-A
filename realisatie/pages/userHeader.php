@@ -40,11 +40,10 @@
             <a href="index.php?page=dashboard">Dashboard</a>
           </li>
           <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Account &#9661; </a>
+            <a href="#" class="dropbtn">Account &#9661; </a>
             <div class="dropdown-content">
               <a href="index.php?page=profiel">Profiel</a>
-              <a href="index.php?page=logout">Uitloggen</a>
-              
+              <a href="index.php?page=logout">Uitloggen</a>              
             </div>
           </li>
         </ul>
