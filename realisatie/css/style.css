@@ -13,10 +13,11 @@ html {
     overflow-y: scroll !important;
     scroll-behavior: smooth !important;
 }
-.wrapper {
-    width: 100% !important;
-    margin-bottom: -40px !important;
-    min-height:100% !important;
+.content {
+    min-height: calc(100vh - 70px);
+}
+#agenda {
+    min-height: calc(110vh - 70px);
 }
 
 #hometext{

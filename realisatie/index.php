@@ -1,3 +1,4 @@
+
 <?php
 	session_start();
 
@@ -30,11 +31,11 @@
 		}
 	}
 ?>
-<!-- <div class="content"> -->
+<div class="content">
     <?php 
 			require("pages/".$_page.".php");
     ?>
     
-<!-- </div> -->
+</div>
 
 <?php include 'pages/footer.php';?>

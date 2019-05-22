@@ -22,31 +22,31 @@
     <title>My P-A</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/header-footer.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/agenda.css">
-    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/header-footer.css?ts<?=time()?>">
+    <link rel="stylesheet" href="css/style.css?ts<?=time()?>">
+    <link rel="stylesheet" href="css/agenda.css?ts<?=time()?>">
+    <link rel="stylesheet" href="css/dashboard.css?ts<?=time()?>">
 
   </head>
   <body>
     <nav>
-        <div id="navbar-brand"><a class="navbar-brand" href="index.php?page=agenda">My P-A</a></div>
-      <div id="menu">
-        <ul>
-          <li>
-            <a href="index.php?page=agenda">Agenda</a>
-          </li>
-          <li>
-            <a href="index.php?page=dashboard">Dashboard</a>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropbtn">Account &#9661;</a>
-            <div class="dropdown-content">
-              <a href="index.php?page=account">Profiel</a>
-              <a href="index.php?page=logout">Uitloggen</a>
-            </div>
-          </li>
-        </ul>
+      <div id="navbar-brand"><a class="navbar-brand" href="index.php?page=agenda">My P-A</a></div>
+        <div id="menu">
+          <ul>
+            <li>
+              <a href="index.php?page=agenda">Agenda</a>
+            </li>
+            <li>
+              <a href="index.php?page=dashboard">Dashboard</a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Account &#8595;</a>
+              <div class="dropdown-content">
+                <a href="index.php?page=account">Profiel</a>
+                <a href="index.php?page=logout">Uitloggen</a>
+              </div>
+            </li>
+          </ul>
       </div>
     </nav>
 

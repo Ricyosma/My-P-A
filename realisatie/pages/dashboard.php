@@ -1,6 +1,6 @@
 <?php
     require 'includes/connection.php';
-    $options = "Kies uw kleur";
+    $options = "";
     $stmt = $conn->query("SELECT DISTINCT Color FROM color");
     while ($row = $stmt->fetch()){
         $options = $options."<option>$row[0]</option>";
@@ -25,16 +25,14 @@
         $description = $_POST['description'];
 
         $color_name = $_POST['Color'];
-
+            
+        
         $query = $conn->prepare("SELECT Color_ID FROM Color WHERE Color=?");
         $query->execute(array($color_name));
         $row = $query->fetch(PDO::FETCH_BOTH);
         if($query->rowCount() > 0) {
             $color_id = $row['Color_ID'];
-        } else {
-            // $_SESSION['dashmessage'] = $query.'error';
         }
-
         try {
             // set the PDO error mode to exception
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -44,6 +42,7 @@
             $conn->exec($sql);
             $taskOutput = 'Task added on:' . ' '. $date . ' ' . 'at' . ' ' . $time;
             $_SESSION['dashmessage'] = $taskOutput; 
+            echo $taskOutput;
             header("Location: index.php?page=dashboard");
         } catch(PDOException $e) {
             echo $sql . "<br>" . $e->getMessage();
@@ -75,31 +74,37 @@
         <div id="dashControls">
             <div class="dashInfo">
                 <h3 class="title">Task name</h3>
-                <input type="text" name="taskName" id="taskName" placeholder="" require>
+                <input type="text" name="taskName" id="taskName" placeholder="Enter your task name" required>
             </div>
             <div class="dashInfo">
                 <h3 class="title">Time</h3>
-                <label for="time">Start</label>
-                <input type="time" name="time" class="taskTime" require>
-                <br>
-                <label for="endTime">finished</label>
-                <input type="time" name="endTime" class="taskTime" require>
+                <div class="timeHolder">
+                    <h5 id="startLabel">Start:</h5>
+                    <input type="time" name="time" class="taskTime" required>
+                </div>
+                
+                <div class="timeHolder">
+                   <h5 id="finishedLabel">finished:</h5>
+                <input type="time" name="endTime" class="taskTime" required> 
+                </div>
             </div>
             <div class="dashInfo">
                 <h3 class="title">Date</h3>
-                <input type="date" name="date" id="date" require>
+                <input type="date" name="date" id="date" required>
             </div>
             <div class="dashInfo">
                 <h3 class="title">Priority</h3>
-                <input type="range" name="range" id="priority" min="0" max="5" require>
+                <input type="range" name="range" id="priority" min="0" max="5" required>
             </div>
             <div id="discription">
                 <h3>Description</h3>
-                <textarea name="description" id="taskDisc" rows="8" require></textarea>
+                <textarea name="description" id="taskDisc" rows="8" required></textarea>
             </div>
             <div class="dashInfo">
-                <h3>Color</h3>
-                <select name="Color" id="">
+                <h3>Colour</h3>
+                
+                <select placeholder="Choose a colour" name="Color" id="color" required>
+                    <option value="" disabled selected >Select your colour</option>
                     <option><?php echo $options;?></option>
                 </select>
             </div>

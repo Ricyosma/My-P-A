@@ -9,6 +9,7 @@
             $enddate = strtotime("+7 days", $startdate);
             while ($startdate < $enddate) {
 ?>
+                
                 <div class="day">
                     <h4>
                         <?php  
@@ -26,9 +27,33 @@
                             $result2 = $dayQuery->setFetchMode(PDO::FETCH_ASSOC); 
                             if($dayQuery->rowCount() > 0) {
                                 while($row = $dayQuery->fetch(PDO::FETCH_ASSOC)){
-                                    echo $row['Task'];
-                                    echo $row['Date'];
-                                    echo $row['Description'];
+                                    ?>
+                                        <?php
+                                            $color_id = $row['Color_ID'];
+                                            $query = $conn->prepare("SELECT Color FROM Color WHERE Color_ID=?");
+                                            $query->execute(array($color_id));
+                                            $row2 = $query->fetch(PDO::FETCH_BOTH);
+                                            if($query->rowCount() > 0) {
+                                                $color_name = $row2['Color'];
+                                            } 
+                                        ?>
+                                        <div class="task <?php echo $color_name; ?> >">
+                                            <div class="taskWrapper">
+                                                <div class="agendaTime">
+                                                    <h6><?php echo $row['Time'] ?></h6>
+                                                </div>
+                                                <div class="nameHolder">
+                                                    <h5><?php echo $row['Task'];?></h5>
+                                                </div>
+                                                <div class="agendaTime">
+                                                    <h6><?php echo $row['End_time'] ?></h6>
+                                                </div>  
+                                            </div>                                              
+                                        </div>
+                                        
+                                        <!-- echo $row['Date'];
+                                        echo $row['Description']; -->
+                                    <?php
                                 }
                             } 
                         $startdate = strtotime("+1 day", $startdate);

@@ -25,19 +25,36 @@ form {
     color: white;
     border-bottom: 1px solid white;
     padding-bottom: 5px;
+    margin-bottom: 10px;
 }
-#taskName {
+#taskName, #date, .taskTime, #color {
     border-radius: 5px;
     border: none;
-    height: 20px!important;
+    height: 22px!important;
 }
 .taskTime {
-    border-radius: 5px;
-    border: none;
-    height: 20px!important;
+    width: 50%;
+    float: right;
+    text-align: center;
+}
+.timeHolder {
+    width: 100%;
+    float: left;
+    padding: 10px 0 10px 0;
+}
+#startLabel {
+    float: left;
+    color: white;
+}
+#finishedLabel {
+    float: left;
+    color: white;
 }
 .dashInfo {
     padding: 0 0 15px 0 !important;
+} 
+#priority {
+    width: 100%;  
 }
 #discription {
     padding: 0 0 15px 0;
@@ -46,14 +63,6 @@ form {
     border-radius: 5px;
     border: none;
     width: 100%;
-}
-.star-rating {
-  line-height:32px;
-  font-size:1.25em;
-}
-
-.star-rating .fa-star {
-    color: yellow;
 }
 #goButton {
     border-radius: 5px;

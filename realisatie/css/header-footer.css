@@ -35,6 +35,7 @@ nav ul li {
     color: #fff;
     font-size: 450%;
     text-decoration-line: none;
+    
 }
 
 div#navbar-brand {
@@ -47,7 +48,7 @@ div#navbar-brand {
 #menu {
     overflow: hidden;
     padding-top: 4.5%;
-    padding-right: 3%;
+    margin-right: 5%;
 }
 
 /* .text {
@@ -66,9 +67,9 @@ nav li a, .dropbtn {
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-    /* text-transform: uppercase;   */
     background-color: rgba(240, 244, 255, 0.233);
     text-decoration: none;
+    transition-duration: 0.45s;
 }
 
 li.dropdown {
@@ -82,6 +83,8 @@ li.dropdown {
     box-shadow: 0px 8px 16px 0px rgba(22, 20, 20, 0.2);
     z-index: 1;
     background-color: #4e67eb;
+    border-bottom-left-radius:  5px;
+    border-bottom-right-radius:  5px;
 }
 
 .dropdown-content a {
@@ -94,7 +97,7 @@ li.dropdown {
 
 .dropdown-content a:hover {
     background-color: #3a50be;
-    transition-duration: 0.8s;
+    transition-duration: 0.45s;
 }
 
 .dropdown:hover .dropdown-content {
@@ -108,11 +111,17 @@ li.dropdown {
 }
 #fill2
 
-#footer {
-    clear: both;
+.footer {
+    /* clear: both; */
     background-color: #7594E7;
     color: #000;
     text-align: center;
-    height: 40px;
-    margin-top: -40px;
+    max-height: 50px;
 }
+.footer p {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    max-height: 50px;
+
+} 

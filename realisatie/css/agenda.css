@@ -30,15 +30,56 @@
 .lane {
   border-right: 1px solid lightgrey;
   min-height: 400px;
+  padding-top: 10px;
 }
 .day h4 {
   text-align: center;
 }
 #agenda {
+  padding-top: 10px;
   width: 100% !important;
   float: left;
   /* height: 100% !important; */
 }
 .currentDay {
   background-color: lightgray'
+}
+.task {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+.taskWrapper {
+  width: 90%;
+  margin: auto;
+}
+.nameHolder h5 {
+  color: white;
+}
+.agendaTime h6 {
+  text-align: center;
+  color: white;
+}
+.ufoGreen {
+  background-color: #2ad674;
+}
+
+.plasticPink {
+  background-color: #FF1493;
+}
+
+.protonPurple {
+  background-color: #8A2BE2;
+}
+
+.fieryReds {
+  background-color: #ce2029;
+}
+
+.oceanBlue {
+  background-color: #0077be;
+}
+
+.sunsetOrange {
+  background-color: #fd5e53;
 }
