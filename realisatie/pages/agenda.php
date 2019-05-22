@@ -10,13 +10,6 @@
             if($taskQuery->rowCount() > 0) {
                 while($row = $taskQuery->fetch(PDO::FETCH_ASSOC)){
                     $date = $row['Date'];
-                    $startTime = $row['Time'];
-                    $endTime = $row['End_time'];
-                    $color = $row['Color_ID'];
-                    $discription = $row['Description'];
-                    $priority = $row['Priority'];
-                    $taskName = $row['Task'];
-
                     $currentDate = date("Y/m/d");
                     $startdate = strtotime($currentDate);
                     $startdate = strtotime("-1 day");
@@ -29,7 +22,18 @@
                         <div class="day">
                             <h4><?php  echo date("l", $startdate);?></h4> 
                             <div class="<?php echo date("l", $startdate);?> lane">
-                                
+<?php 
+                            $dayQuery = $conn->prepare("SELECT * FROM task WHERE Date=?");
+                            $dayQuery->execute(array($currentDate));
+                            $result = $dayQuery->setFetchMode(PDO::FETCH_ASSOC); 
+                            if($dayQuery->rowCount() > 0) {
+                                while($row = $dayQuery->fetch(PDO::FETCH_ASSOC)){
+                                    echo $row['Task'];
+                                }
+                            }
+
+
+?>
                             </div>
                         </div>
                         <?php
@@ -41,4 +45,3 @@
 ?>
     </div>
 </section>
-<div id='fill'></div>
