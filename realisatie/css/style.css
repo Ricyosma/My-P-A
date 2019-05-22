@@ -104,3 +104,13 @@ table input:focus {
     border: .5px #3a50be solid;
     border-radius: 5px;
 }
+
+.tab-content .profiel {
+    margin-left: 20%;
+    margin-top: 5%;
+    border: 1px solid gray;
+    margin: 8px 0;
+    padding: 12px 18px;
+    border-radius: 8px;
+    
+}
