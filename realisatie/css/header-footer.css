@@ -77,6 +77,7 @@ nav li a, .dropbtn {
 li a:hover, .dropdown:hover .dropbtn {
     /* text-transform: uppercase;   */
     background-color: rgba(240, 244, 255, 0.233);
+    text-decoration: none;
 }
 
 li.dropdown {
@@ -117,6 +118,6 @@ table {
 table input {
     padding: 3%;
     width: 120%;
-    border: #000 solid;
+    border: #3a50be solid;
     border-radius: 5px;
 }
