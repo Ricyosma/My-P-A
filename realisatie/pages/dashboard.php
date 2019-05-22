@@ -79,11 +79,11 @@
             </div>
             <div class="dashInfo">
                 <h3 class="title">Date</h3>
-                <input type="date" name="date" id="" require>
+                <input type="date" name="date" id="date" require>
             </div>
             <div class="dashInfo">
                 <h3 class="title">Priority</h3>
-                <input type="range" name="range" id="" min="0" max="5" require>
+                <input type="range" name="range" id="priority" min="0" max="5" require>
             </div>
             <div id="discription">
                 <h3>Description</h3>
