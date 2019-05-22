@@ -38,8 +38,8 @@
         try {
             // set the PDO error mode to exception
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $sql = "INSERT INTO task (Task, Priority, Description, Color_ID, Date, Time, End_time) 
-                    VALUES ('$taskName','$priority', '$description', '$color_id', '$date', '$time', '$endTime')";
+            $sql = "INSERT INTO task (Task, Priority, User_ID, Description, Color_ID, Date, Time, End_time) 
+                    VALUES ('$taskName','$priority','$id', '$description', '$color_id', '$date', '$time', '$endTime')";
             // use exec() because no results are returned
             $conn->exec($sql);
             $taskOutput = 'Task added on:' . ' '. $date . ' ' . 'at' . ' ' . $time;
