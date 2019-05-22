@@ -16,6 +16,8 @@
         
         $time = $_POST['time'];
 
+        $endTime = $_Post['endTime'];
+
         $date = $_POST['date'];
 
         $priority = $_POST['range'];
@@ -36,8 +38,8 @@
         try {
             // set the PDO error mode to exception
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $sql = "INSERT INTO task (Task, Priority, Description, Color_ID, Date, Time) 
-                    VALUES ('$taskName','$priority', '$description', '$color_id', '$date', '$time')";
+            $sql = "INSERT INTO task (Task, Priority, Description, Color_ID, Date, Time, End_time) 
+                    VALUES ('$taskName','$priority', '$description', '$color_id', '$date', '$time', '$endTime')";
             // use exec() because no results are returned
             $conn->exec($sql);
             $taskOutput = 'Task added on:' . ' '. $date . ' ' . 'at' . ' ' . $time;
@@ -78,6 +80,10 @@
             <div class="dashInfo">
                 <h3 class="title">Time</h3>
                 <input type="time" name="time" id="taskTime" require>
+            </div>
+            <div class="dashInfo">
+                <h3 class="title">End time</h3>
+                <input type="time" name="endTime" id="taskEndTime" require>
             </div>
             <div class="dashInfo">
                 <h3 class="title">Date</h3>
