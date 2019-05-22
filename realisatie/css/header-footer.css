@@ -21,8 +21,8 @@ nav {
 }
 
 nav ul {
- list-style-type: none;
- float: right;
+    list-style-type: none;
+    float: right;
 }
 
 nav ul li {
@@ -67,11 +67,11 @@ div#navbar-brand {
 }
 
 nav li a, .dropbtn {
-  display: inline-block;
-  color: #fff;  
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+    display: inline-block;
+    color: #fff;  
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 li a:hover, .dropdown:hover .dropbtn {
@@ -81,24 +81,24 @@ li a:hover, .dropdown:hover .dropbtn {
 }
 
 li.dropdown {
-  display: inline-block;
+    display: inline-block;
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(22, 20, 20, 0.2);
-  z-index: 1;
-  background-color: #4e67eb;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(22, 20, 20, 0.2);
+    z-index: 1;
+    background-color: #4e67eb;
 }
 
 .dropdown-content a {
-  color: white;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
 }
 
 .dropdown-content a:hover {
@@ -107,7 +107,7 @@ li.dropdown {
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+    display: block;
 }
 
 table {
@@ -118,6 +118,13 @@ table {
 table input {
     padding: 3%;
     width: 120%;
-    border: #3a50be solid;
+    border: .5px solid  #3a50be36;  
+    border-radius: 5px;
+}
+
+table input:focus {
+    padding: 3%;
+    width: 120%;
+    border: .5px #3a50be solid;
     border-radius: 5px;
 }
