@@ -2,7 +2,7 @@
 <?php
 $id = $_SESSION['vnaam'];
 $id = $_SESSION['anaam'];
-$id = $_SESSION['E_mail'];
+$mail = $_SESSION['E_mail'];
 $id = $_SESSION['id'];
 
 $servername = "localhost";
