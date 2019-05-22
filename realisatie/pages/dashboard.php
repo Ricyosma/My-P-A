@@ -78,7 +78,7 @@
                 <input type="text" name="taskName" id="taskName" placeholder="" require>
             </div>
             <div class="dashInfo">
-                <h3 class="title">Time</h3>
+                <h3 class="title">Start time</h3>
                 <input type="time" name="time" id="taskTime" require>
             </div>
             <div class="dashInfo">
