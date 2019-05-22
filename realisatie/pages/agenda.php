@@ -3,7 +3,7 @@
         <?php 
             $id = $_SESSION['id'];
 
-            $taskQuery = $conn->prepare("SELECT task FROM task where User_ID=?");
+            $taskQuery = $conn->prepare("SELECT Task FROM task where User_ID=?");
             $taskQuery->execute(array($id));
             $result = $taskQuery->setFetchMode(PDO::FETCH_ASSOC); 
             if($taskQuery->rowCount() > 0) {
@@ -13,7 +13,10 @@
                     $startdate = strtotime($currentDate);
                     $startdate = strtotime("-1 day");
                     $enddate = strtotime("+7 days", $startdate);
-                    while ($startdate < $enddate) {
+                    /*PROBLEEM!!!, de code is technisch gezien goed. MAAR, de loop zorgt er voor dat die een 1 regel laat zien en genereert de HELE tabel. als die 
+                    row 2 wilt doen. herhaalt die het en zet die het er dus onder met de waarde van row 2 met het maken van de hele week. als er een if ofzo is, blijft die soort van 
+                    lopen denk ik door row 1. - Riccardo */
+                     while($startdate < $enddate) {
                         $startdate = strtotime("+1 day", $startdate);
 ?>
                         <div class="day">
@@ -24,7 +27,7 @@
                             $dayQuery->execute(array(date("Y/m/d", $startdate)));
                             $result2 = $dayQuery->setFetchMode(PDO::FETCH_ASSOC); 
                             if($dayQuery->rowCount() > 0) {
-                                if($row2 = $dayQuery->fetch(PDO::FETCH_ASSOC)){
+                                while($row2 = $dayQuery->fetch(PDO::FETCH_ASSOC)){
                                     echo $row['Task'];
                                     
                                 }
