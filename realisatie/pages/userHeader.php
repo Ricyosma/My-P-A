@@ -43,8 +43,20 @@
           <li class="nav-item">
             <a class="dropdown-item" href="index.php?page=dashboard">Dashboard</a>
           </li>
+          <li class="nav-item">
+            <a class="dropdown-item" href="index.php?page=account">Account</a>
+          </li>
+          <!-- Dropdown -->
+            <ul>
+              <li>
+                <a href="index.php?page=profiel">Profiel</a>
+              </li>
+              <li>
+                <a href="index.php?page=uitloggen">Uitloggen</a>
+              </li>
+            </ul>
         </ul>
       </div>
       </nav>
 
-    
+
