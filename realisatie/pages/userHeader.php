@@ -42,7 +42,7 @@
           <li class="dropdown">
             <a href="javascript:void(0)" class="dropbtn">Account &#9661; </a>
             <div class="dropdown-content">
-              <a href="#">Profiel</a>
+              <a href="index.php?page=profiel">Profiel</a>
               <a href="index.php?page=logout">Uitloggen</a>
               
             </div>
