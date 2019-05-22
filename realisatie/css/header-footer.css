@@ -57,15 +57,6 @@ div#navbar-brand {
     color: #000;
 } */
 
-#footer {
-    clear: both;
-    background-color: #7594E7;
-    color: #000;
-    text-align: center;
-    height: 40px;
-    margin-top: -40px;
-}
-
 nav li a, .dropbtn {
     display: inline-block;
     color: #fff;  
@@ -109,22 +100,15 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
-table {
-    margin-bottom: 10%;       
-    margin-left: 5%;
+#fill{
+    height: 295px;
 }
 
-table input {
-    padding: 3%;
-    width: 120%;
-    border: .5px solid  #3a50be36;  
-    border-radius: 5px;
-}
-
-table input:focus {
-    padding: 3%;
-    width: 120%;
-    border: .5px #3a50be solid;
-    border-radius: 5px;
+#footer {
+    clear: both;
+    background-color: #7594E7;
+    color: #000;
+    text-align: center;
+    height: 40px;
+    margin-top: -40px;
 }

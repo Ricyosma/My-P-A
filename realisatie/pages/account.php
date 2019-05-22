@@ -1,12 +1,10 @@
 
 <?php
-//$id = $_SESSION['id'];
+$id = $_SESSION['vnaam'];
+$id = $_SESSION['anaam'];
+$mail = $_SESSION['E_mail'];
+$id = $_SESSION['id'];
 
-// $sql = mysql_query("SELECT First_name, Last_name, E_mail, user_ID FROM user 	");
-// if (!$result) {
-//     echo 'Could not run query: ' . mysql_error();
-//     exit;
-// }
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -15,7 +13,10 @@ $password = "";
 $conn = new mysqli($servername, $username, $password);
 
 $sql = "SELECT First_name, Last_name, E_mail, user_ID FROM user";
-
+$vnaam = $_SESSION ['vnaam'];
+$anaam = $_SESSION ['anaam'];
+$id = $_SESSION['E_mail'];
+$id = $_SESSION['id'];
 ?>
 
 <div id="account">
@@ -40,19 +41,19 @@ $sql = "SELECT First_name, Last_name, E_mail, user_ID FROM user";
 						<table class="table">
 							<tr>
 								<td>First name:</td>
-								<td><?php echo $First_name; ?></td>
+								<td><?php echo $vnaam; ?></td>
 							</tr>
 							<tr>
 								<td>Last name:</td>
-								<td><?php echo $Last_name; ?></td>
+								<td><?php echo $anaam; ?></td>
 							</tr>
 							<tr>
 								<td>Email:</td>
-								<td><?php echo $E_mail; ?></td>
+								<td><?php echo $mail; ?></td>
 							</tr>
 							<tr>
 								<td>User ID:</td>
-								<td><?php echo $user_ID; ?></td>
+								<td><?php echo $id; ?></td>
 							</tr>
 						</table>
 					</div>

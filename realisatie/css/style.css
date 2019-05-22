@@ -19,6 +19,22 @@ html {
     min-height:100% !important;
 }
 
+#hometext{
+    max-width: 26%;
+    left: 10%;
+    top: 30px;
+    position: relative;
+}
+
+
+#homebook{
+    max-height: 100%;
+    margin: 15px;
+    padding: 0;
+    z-index: -1;
+    position: absolute;
+}
+
 /* task 1 (in agenda) : 
 width: 587.5px;
 height: 74px;
@@ -68,4 +84,28 @@ color: #fff; */
     padding: 14px 16px;
     margin: 3% 0% 3% 0%;
     text-decoration: none;
+}
+
+table {
+    margin-bottom: 10%;       
+    margin-left: 5%;
+}
+
+table input {
+    padding: 3%;
+    width: 120%;
+    border: .5px solid  #3a50be36;  
+    border-radius: 5px;
+}
+
+table input:focus {
+    padding: 3%;
+    width: 120%;
+    border: .5px #3a50be solid;
+    border-radius: 5px;
+}
+
+.spacing { 
+    border-collapse:separate; 
+    border-spacing:0 15px;
 }
