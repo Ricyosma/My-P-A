@@ -30,10 +30,10 @@
       <div id="menu">
         <ul>
           <li>
-            <a href="index.php?page=registreren">Registreren</a>
+            <a href="index.php?page=register">Registreren</a>
           </li>
           <li>
-            <a href="index.php?page=aanmelden">Aanmelden</a>
+            <a href="index.php?page=login">Aanmelden</a>
           </li>
         </ul>
       </div>
