@@ -2,22 +2,7 @@
 <?php
 $id = $_SESSION['id'];
 
-	$stmt = "SELECT * FROM user WHERE user_id='$id'";
-
-	$result = mysqli_query($conn, $sql);
-
-	if(mysqli_num_rows($result) > 0)
-	{
-		while($row = mysqli_fetch_assoc($result))
-		{
-			$_SESSION['adres'] = $row["adres"];
-
-			$_SESSION['woonplaats'] = $row["woonplaats"];
-
-			$_SESSION['postcode'] = $row["postcode"];
-
-		}
-	}
+	
 ?>
 <div id="account">
 	<div class="col-lg-6 col-sm-6">
