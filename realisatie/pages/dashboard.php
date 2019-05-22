@@ -49,7 +49,7 @@
             echo $sql . "<br>" . $e->getMessage();
         }
         $conn = null;
-    }
+    } 
 ?>
 <div class="left">
     <section id="dashMessage">
