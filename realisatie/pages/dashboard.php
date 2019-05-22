@@ -10,7 +10,7 @@
 
         $_SESSION['dashmessage'] = '';
 
-        $taskName = $time = $date = $priority = $description = '';
+        $taskName  = $time = $endTime = $date = $priority = $description = '';
 
         $taskName = $_POST['taskName'];
         
