@@ -11,6 +11,7 @@
     }
     $vnaam = $_SESSION['vnaam'];
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -26,25 +27,28 @@
      <link rel="stylesheet" href="css/agenda.css">
     <link rel="stylesheet" href="css/dashboard.css">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
   </head>
   <body>
-  <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="index.php?page=home">My P-A</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="dropdown-item" href="index.php?page=agenda">Agenda</a>
+    <nav>
+        <div id="navbar-brand"><a class="navbar-brand" href="index.php?page=home">My P-A</a></div>
+      <div id="menu">
+        <ul>
+          <li>
+            <a href="index.php?page=agenda">Agenda</a>
           </li>
-          <li class="nav-item">
-            <a class="dropdown-item" href="index.php?page=dashboard">Dashboard</a>
+          <li>
+            <a href="index.php?page=dashboard">Dashboard</a>
+          </li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
           </li>
         </ul>
       </div>
-      </nav>
+    </nav>
 
-    
+
