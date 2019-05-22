@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 22 mei 2019 om 13:07
+-- Gegenereerd op: 22 mei 2019 om 13:45
 -- Serverversie: 10.1.36-MariaDB
 -- PHP-versie: 7.2.11
 
@@ -52,6 +52,13 @@ CREATE TABLE `agenda` (
   `User_ID` int(255) NOT NULL,
   `Task_ID` int(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `agenda`
+--
+
+INSERT INTO `agenda` (`User_ID`, `Task_ID`) VALUES
+(831873458, 7);
 
 -- --------------------------------------------------------
 
@@ -113,7 +120,10 @@ INSERT INTO `task` (`Task_ID`, `Task`, `Priority`, `Description`, `Color_ID`, `D
 (1, 'test', '5', 'hellu', 3, '2019-05-22', '16:12:20', '00:00:00'),
 (2, 'going home', '3', 'vergeet niet te tanken dingus!!!!', 3, '2019-05-22', '13:19:00', '00:00:00'),
 (3, 'going home', '3', 'k;lkl;', 5, '2019-05-22', '18:25:00', '00:00:00'),
-(4, 'going home', '3', '2232', 4, '2019-05-22', '07:22:00', '00:00:00');
+(4, 'going home', '3', '2232', 4, '2019-05-22', '07:22:00', '00:00:00'),
+(5, 'going home', '3', 'opok;k;kl;', 6, '2019-05-22', '03:25:00', '00:00:00'),
+(6, 'going home', '3', 'opok;k;kl;', 6, '2019-05-22', '03:25:00', '00:00:00'),
+(7, 'Test', '1', 'asd', 2, '2019-05-07', '09:00:00', '40:00:00');
 
 -- --------------------------------------------------------
 
@@ -164,9 +174,7 @@ ALTER TABLE `abo`
 -- Indexen voor tabel `agenda`
 --
 ALTER TABLE `agenda`
-  ADD PRIMARY KEY (`User_ID`,`Task_ID`),
-  ADD KEY `User_ID` (`User_ID`,`Task_ID`),
-  ADD KEY `Task_ID` (`Task_ID`);
+  ADD PRIMARY KEY (`User_ID`,`Task_ID`);
 
 --
 -- Indexen voor tabel `color`
@@ -230,7 +238,7 @@ ALTER TABLE `factuur`
 -- AUTO_INCREMENT voor een tabel `task`
 --
 ALTER TABLE `task`
-  MODIFY `Task_ID` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `Task_ID` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT voor een tabel `user`
