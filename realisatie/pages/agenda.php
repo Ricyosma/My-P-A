@@ -1,3 +1,14 @@
+<?php 
+        // $agendaQuery = $conn->prepare("SELECT * FROM  WHERE ");
+        // $agendaQuery->execute(array($color_name));
+        // $row = $agendaQuery->fetch(PDO::FETCH_BOTH);
+        // if($agendaQuery->rowCount() > 0) {
+
+        // } else {
+        //     $_SESSION['dashmessage'] = $agendaQuery.'error';
+        // }
+?>
+
 <section id="agenda">
    <div class="grid-container">
         <div class="day">
