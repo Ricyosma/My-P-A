@@ -105,7 +105,7 @@ table input:focus {
     border-radius: 5px;
 }
 
-.tab-content {
+.well {
     margin-left: 20%;
     margin-right: 20%;
     margin-bottom: 5%;
@@ -113,6 +113,15 @@ table input:focus {
     margin-top: 5%;
     height: 500px;
     background-color: #7594E7;
-    color: white;
+    color: rgb(224, 221, 221);
     font-family: 'Rubik', sans-serif !important;
+}
+
+#vnaam {
+    padding-top: 5%;
+    margin-right: 10%;
+}
+
+#anaam {
+    margin-right: 20%;
 }
