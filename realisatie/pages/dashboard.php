@@ -45,6 +45,7 @@
             $conn->exec($sql);
             $taskOutput = 'Task added on:' . ' '. $date . ' ' . 'at' . ' ' . $time;
             $_SESSION['dashmessage'] = $taskOutput;
+
             header("Location: index.php?page=dashboard");
 
         } catch(PDOException $e) {
