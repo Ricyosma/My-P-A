@@ -8,7 +8,7 @@
             $result = $taskQuery->setFetchMode(PDO::FETCH_ASSOC); 
             if($taskQuery->rowCount() > 0) {
                 while($row = $taskQuery->fetch(PDO::FETCH_ASSOC)){
-                    $date = $row['Date'];
+                    // $date = $row['Date'];
                     $currentDate = date("Y/m/d");
                     $startdate = strtotime($currentDate);
                     $startdate = strtotime("-1 day");
