@@ -24,7 +24,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/header-footer.css">
     <link rel="stylesheet" href="css/style.css">
-     <link rel="stylesheet" href="css/agenda.css">
+    <link rel="stylesheet" href="css/agenda.css">
     <link rel="stylesheet" href="css/dashboard.css">
 
   </head>
@@ -40,11 +40,10 @@
             <a href="index.php?page=dashboard">Dashboard</a>
           </li>
           <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Account &#9661; </a>
+            <a href="#" class="dropbtn">Account &#9661;</a>
             <div class="dropdown-content">
-              <a href="index.php?page=profiel">Profiel</a>
+              <a href="index.php?page=account">Profiel</a>
               <a href="index.php?page=logout">Uitloggen</a>
-              
             </div>
           </li>
         </ul>

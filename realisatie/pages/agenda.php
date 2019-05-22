@@ -1,12 +1,21 @@
 <?php 
-        // $agendaQuery = $conn->prepare("SELECT * FROM  WHERE ");
-        // $agendaQuery->execute(array($color_name));
-        // $row = $agendaQuery->fetch(PDO::FETCH_BOTH);
-        // if($agendaQuery->rowCount() > 0) {
+    $id = $_SESSION['id'];
 
-        // } else {
-        //     $_SESSION['dashmessage'] = $agendaQuery.'error';
-        // }
+    $taskQuery = $conn->prepare("SELECT * FROM task where User_ID=?");
+    $taskQuery->execute(array($id));
+    $row = $taskQuery->fetch(PDO::FETCH_BOTH);
+    if($taskQuery->rowCount() > 0) {
+        while($row = $taskQuery->fetch(PDO::FETCH_BOTH)){
+            $date = $row['Date'];
+            $startTime = $row['Time'];
+            $endTime = $row['End_time'];
+            $color = $row['Color_ID'];
+            $discription = $row['Description'];
+
+        }
+    } else {
+        
+    }
 ?>
 
 <section id="agenda">

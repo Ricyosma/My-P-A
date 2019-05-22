@@ -8,7 +8,7 @@
 
     if (isset($_POST['submit'])) {
 
-        $_SESSION['dashmessage'] = '';
+        // $_SESSION['dashmessage'] = '';
 
         $taskName  = $time = $endTime = $date = $priority = $description = '';
 
@@ -26,7 +26,6 @@
 
         $color_name = $_POST['Color'];
 
-        echo $endTime;
         $query = $conn->prepare("SELECT Color_ID FROM Color WHERE Color=?");
         $query->execute(array($color_name));
         $row = $query->fetch(PDO::FETCH_BOTH);
@@ -35,30 +34,22 @@
         } else {
             $_SESSION['dashmessage'] = $query.'error';
         }
-        
+
         try {
             // set the PDO error mode to exception
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $sql = "INSERT INTO task (Task, Priority, Description, Color_ID, Date, Time, End_time) 
-                    VALUES ('$taskName','$priority', '$description', '$color_id', '$date', '$time', '$endTime')";
+            $sql = "INSERT INTO task (Task, Priority, User_ID, Description, Color_ID, Date, Time, End_time) 
+                    VALUES ('$taskName','$priority','$id', '$description', '$color_id', '$date', '$time', '$endTime')";
             // use exec() because no results are returned
             $conn->exec($sql);
             $taskOutput = 'Task added on:' . ' '. $date . ' ' . 'at' . ' ' . $time;
-            $_SESSION['dashmessage'] = $taskOutput;
-           /* $conn2->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $sql2 = "INSERT INTO agenda_tasks (Task_ID) 
-                    VALUES ('$taskName','$priority', '$description', '$color_id', '$date', '$time', '$endTime')";
-
-
-            // use exec() because no results are returned
-            $conn->exec($sql);*/
+            $_SESSION['dashmessage'] = $taskOutput; 
             header("Location: index.php?page=dashboard");
-
         } catch(PDOException $e) {
             echo $sql . "<br>" . $e->getMessage();
         }
         $conn = null;
-    }
+    } 
 ?>
 <div class="left">
     <section id="dashMessage">
