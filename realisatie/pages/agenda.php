@@ -6,7 +6,12 @@
     $row = $taskQuery->fetch(PDO::FETCH_BOTH);
     if($taskQuery->rowCount() > 0) {
         while($row = $taskQuery->fetch(PDO::FETCH_BOTH)){
-            echo $row['Task_ID'];
+            $date = $row['Date'];
+            $startTime = $row['Time'];
+            $endTime = $row['End_time'];
+            $color = $row['Color_ID'];
+            $discription = $row['Description'];
+
         }
     } else {
         
