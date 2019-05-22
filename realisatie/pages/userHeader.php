@@ -42,8 +42,13 @@
           <li class="dropdown">
             <a href="#" class="dropbtn">Account &#9661;</a>
             <div class="dropdown-content">
+<<<<<<< HEAD
+              <a href="index.php?page=account">Profiel</a>
+              <a href="index.php?page=logout">Uitloggen</a>
+=======
               <a href="index.php?page=profiel">Profiel</a>
               <a href="index.php?page=logout">Uitloggen</a>              
+>>>>>>> 982952ce6dc2f0ae3a082fc6f802be85eec596b8
             </div>
           </li>
         </ul>
