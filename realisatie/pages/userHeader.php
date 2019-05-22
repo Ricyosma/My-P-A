@@ -11,6 +11,7 @@
     }
     $vnaam = $_SESSION['vnaam'];
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -29,8 +30,8 @@
   </head>
   <body>
     <nav>
-        <a class="navbar-brand" href="index.php?page=home">My P-A</a>
-      <div>
+        <div id="navbar-brand"><a class="navbar-brand" href="index.php?page=home">My P-A</a></div>
+      <div id="menu">
         <ul>
           <li>
             <a href="index.php?page=agenda">Agenda</a>
