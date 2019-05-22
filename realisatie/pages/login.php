@@ -48,4 +48,5 @@
 		<tr>
 		<td> <button type="submit" name="submit" class="btn-sub btn btn-primary">Aanmelden</button> </td>
 		</tr>
+	</table>
   </form>
