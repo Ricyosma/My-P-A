@@ -1,16 +1,16 @@
 <?php 
     $id = $_SESSION['id'];
 
-    // $taskQuery = $conn->prepare("SELECT * FROM task where User_ID=?");
-    // $taskQuery->execute(array($id));
-    // $row = $taskQuery->fetch(PDO::FETCH_BOTH);
-    // if($taskQuery->rowCount() > 0) {
-    //     while($row = $taskQuery->fetch(PDO::FETCH_BOTH)){
-
-    //     }
-    // } else {
-    //     echo 'fail';
-    // }
+    $taskQuery = $conn->prepare("SELECT * FROM task where User_ID=?");
+    $taskQuery->execute(array($id));
+    $row = $taskQuery->fetch(PDO::FETCH_BOTH);
+    if($taskQuery->rowCount() > 0) {
+        while($row = $taskQuery->fetch(PDO::FETCH_BOTH)){
+            echo $row['Task_ID'];
+        }
+    } else {
+        
+    }
 ?>
 
 <section id="agenda">
