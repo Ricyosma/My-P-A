@@ -37,7 +37,7 @@
 	    <div class="form-group">
 	      <td><label for="exampleInputEmail2">Emailadres</label> </td>
 	      <td> <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Vul uw email in" require name="email"> </td>
-		  <small id="emailHelp1" class="form-text">Uw email zal nooit worden gedeeld met andere partijen.</small> </div>
+		  </div>
 		</tr>
 			<tr>
 					<div class="form-group">
@@ -46,7 +46,8 @@
 				</div>
 			</tr>
 		<tr>
-		<td> <button type="submit" name="submit" class="btn-sub btn btn-primary">Aanmelden</button> </td>
+		<td> <button type="submit" name="submit" class="submit">Aanmelden</button> </td>
 		</tr>
+		<tfoot><tr><td> <small id="emailHelp1" class="form-text">Uw email zal nooit worden gedeeld met andere partijen.</small> </td></tr></tfoot>
 	</table>
   </form>

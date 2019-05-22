@@ -40,7 +40,7 @@
             <a href="index.php?page=dashboard">Dashboard</a>
           </li>
           <li class="dropdown">
-            <a href="#" class="dropbtn">Account &#9661; </a>
+            <a href="#" class="dropbtn">Account &#9661;</a>
             <div class="dropdown-content">
               <a href="index.php?page=profiel">Profiel</a>
               <a href="index.php?page=logout">Uitloggen</a>              
