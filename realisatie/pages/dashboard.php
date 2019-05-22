@@ -1,13 +1,13 @@
 <?php
-//require 'includes/connection.php';
+require 'includes/connection.php';
 
-$color = "SELECT DISTINCT Color FROM color";
-$result2 = mysqli_query($conn, $query1);
-$options = "";
- while($row2 = mysqli_fetch_array($result2))
-{
-  $options = $options."<option>$row2[0]</option>";
-    }
+
+$options = "Kies uw kleur";
+$stmt = $conn->query("SELECT DISTINCT Color FROM color");
+while ($row = $stmt->fetch()){
+    $options = $options."<option>$row[0]</option>";
+}
+
 ?>
 <div class="left">
     <section id="dashMessage">
@@ -56,10 +56,8 @@ $options = "";
             </div>
             <div class="dashInfo">
                 <h3>Color</h3>
-                <select name="" id="">
-                    <option value="blue">Blue</option>
-                    <option value="blue">Green</option>
-                    <option value="blue">Pink</option>
+                <select name="Color" id="">
+                    <option><?php echo $options;?></option>
                 </select>
             </div>
             <button id="goButton" type="submit">Go</button>
