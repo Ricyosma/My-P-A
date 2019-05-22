@@ -37,13 +37,9 @@
 
         $taskQuery = $conn->prepare("SELECT Task_ID FROM task");
         $row = $taskQuery->fetch(PDO::FETCH_BOTH);
-        if($taskQuery->rowCount() > 0) {
             $task = $row['Task_ID'];
             echo $row['Task_ID'];
-        } else {
-            echo 'fail';
-        }
-        echo $task;
+       
 
         try {
             // set the PDO error mode to exception
@@ -54,15 +50,15 @@
             $conn->exec($sql);
             $taskOutput = 'Task added on:' . ' '. $date . ' ' . 'at' . ' ' . $time;
             $_SESSION['dashmessage'] = $taskOutput;
-            // $sql2 = "INSERT INTO agenda (User_ID, Task_ID)
-            //         VALUES ('$id', '$task')";
-            // $conn->exec($sql2);  
+             /*$sql2 = "INSERT INTO agenda (User_ID, Task_ID)
+                     VALUES ((SELECT user_ID from user)), ((SELECT Task_ID form task))";
+             $conn->exec($sql2); */ 
             header("Location: index.php?page=dashboard");
         } catch(PDOException $e) {
             echo $sql . "<br>" . $e->getMessage();
         }
         $conn = null;
-    }
+    } 
 ?>
 <div class="left">
     <section id="dashMessage">
