@@ -1,44 +1,32 @@
 <section id="agenda">
    <div class="grid-container">
-    <!-- <div class="Time-stamp">
-            <div class="lane" style="text-align: center;">
-                <?php
-                    // $x = 0;
-                    // while( $x++ < 24){
-                    //     $timetoprint = date('G:i:s',mktime($x,0,0,1,1,2019));
-                    //     echo  $timetoprint . '<br>';
-                    // }
-                ?>
-            </div>  
-        </div> -->
         <div class="Time-stamp">
-            <h4>Time</h4>
-            <h4>Stamp</h4>
-                <div class="\30 0">01:00</div>
-                <div class="\30 1">02:00</div>
-                <div class="\30 2">03:00</div>
-                <div class="\30 3">04:00</div>
-                <div class="\30 4">05:00</div>
-                <div class="\30 5">06:00</div>
-                <div class="\30 6">07:00</div>
-                <div class="\30 7">08:00</div>
-                <div class="\30 8">09:00</div>
-                <div class="\30 9">10:00</div>
-                <div class="\31 0">11:00</div>
-                <div class="\31 1">12:00</div>
-                <div class="\31 2">13:00</div>
-                <div class="\31 3">14:00</div>
-                <div class="\31 4">15:00</div>
-                <div class="\31 5">16:00</div>
-                <div class="\31 6">17:00</div>
-                <div class="\31 7">18:00</div>
-                <div class="\31 8">19:00</div>
-                <div class="\31 9">20:00</div>
-                <div class="\32 0">21:00</div>
-                <div class="\32 1">22:00</div>
-                <div class="\32 2">23:00</div>
-                <div class="\32 3">00:00</div>
-  </div>
+            <h4>time</h4>
+            <div class="\30 0">01:00</div>
+            <div class="\30 1">02:00</div>
+            <div class="\30 2">03:00</div>
+            <div class="\30 3">04:00</div>
+            <div class="\30 4">05:00</div>
+            <div class="\30 5">06:00</div>
+            <div class="\30 6">07:00</div>
+            <div class="\30 7">08:00</div>
+            <div class="\30 8">09:00</div>
+            <div class="\30 9">10:00</div>
+            <div class="\31 0">11:00</div>
+            <div class="\31 1">12:00</div>
+            <div class="\31 2">13:00</div>
+            <div class="\31 3">14:00</div>
+            <div class="\31 4">15:00</div>
+            <div class="\31 5">16:00</div>
+            <div class="\31 6">17:00</div>
+            <div class="\31 7">18:00</div>
+            <div class="\31 8">19:00</div>
+            <div class="\31 9">20:00</div>
+            <div class="\32 0">21:00</div>
+            <div class="\32 1">22:00</div>
+            <div class="\32 2">23:00</div>
+            <div class="\32 3">00:00</div>
+        </div>
         <?php 
 
             $id = $_SESSION['id'];
@@ -97,7 +85,7 @@
                                             </div>
                                             <div class="agendaTime">
                                                 <h6><?php 
-                                                    // echo $row['End_time']; 
+                                                    // echo $row['End_time'];  
                                                 ?></h6>
                                             </div>  
                                         </div>                                              
