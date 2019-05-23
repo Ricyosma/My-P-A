@@ -40,7 +40,7 @@
                     VALUES ('$taskName','$priority','$id', '$description', '$color_id', '$date', '$time', '$endTime')";
             // use exec() because no results are returned
             $conn->exec($sql); 
-            $taskOutput = 'Task added on:' . ' '. $date . ' ' . 'at' . ' ' . $time;
+            $taskOutput = 'Task added on date:' . ' '. $date . ' ' . 'at' . ' ' . $time;
             $_SESSION['dashmessage'] = $taskOutput;
             header("Location: index.php?page=dashboard");
         } catch(PDOException $e) {
@@ -52,7 +52,7 @@
 <div class="left">
     <section id="dashMessage">
         <div id="messageHolder">
-            <h3>Most recent add:</h3>
+            <h3>Most recent added task:</h3>
             <div id="messageOutput">
                 <?php 
                        if (isset($_SESSION['dashmessage'])) {
@@ -93,7 +93,7 @@
             </div>
             <div class="dashInfo">
                 <h3 class="title">Priority</h3>
-                <input type="range" name="range" id="priority" min="0" max="5" required>
+                <input type="range" name="range" id="priority" min="1" max="5" required>
             </div>
             <div id="discription">
                 <h3>Description</h3>

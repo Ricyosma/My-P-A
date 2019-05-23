@@ -29,27 +29,27 @@
 
   </head>
   <body>
-    <nav>
-      <div id="navbar-brand">
+    <header>
+
         <a class="navbar-brand" href="index.php?page=agenda">My P-A</a>
-      </div>
-        <div id="menu">
-          <ul>
-            <li>
-              <a href="index.php?page=agenda">Agenda</a>
-            </li>
-            <li>
-              <a href="index.php?page=dashboard">Dashboard</a>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="dropbtn">Account &#8595;</a>
-              <div class="dropdown-content">
-                <a href="index.php?page=account">Profiel</a>
-                <a href="index.php?page=logout">Uitloggen</a>
-              </div>
-            </li>
-          </ul>
-      </div>
-    </nav>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="index.php?page=agenda">Agenda</a>
+          </li>
+          <li>
+            <a href="index.php?page=dashboard">Dashboard</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Account &#8595;</a>
+            <div class="dropdown-content">
+              <a href="index.php?page=account">Profile</a>
+              <a href="index.php?page=logout">Log out</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+  </header>
 
 
