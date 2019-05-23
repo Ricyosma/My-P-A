@@ -21,7 +21,6 @@
 
 .lane {
   border-right: 1px solid lightgrey;
-  padding-top: 10px;
   min-height: 420px;
   border-radius: 5px;
 }
@@ -42,6 +41,7 @@
   width: 100%;
   border-radius: 5px;
   border: 1px solid lightgray;
+  height: 35px;
 }
 .taskWrapper {
   width: 90%;
