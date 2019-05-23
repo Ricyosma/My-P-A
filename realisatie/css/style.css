@@ -140,14 +140,14 @@ table input:focus {
 #vnaam{
     position: relative;
     width: 60%;
-    left: 35%;
+    left: 34%;
 }
 
 #anaam {
     padding-top: 30px;
     position: relative;
     width: 50%;
-    left: 37%;
+    left: 35%;
 }
 
 #email {
@@ -169,7 +169,7 @@ table input:focus {
     height: 62%;
     width: 30%;
     padding-top: -25%;
-    top: 23%;
+    top: 18%;
     left: 10%;
     position: absolute;
 
