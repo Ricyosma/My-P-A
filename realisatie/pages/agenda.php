@@ -1,6 +1,16 @@
 <section id="agenda">
    <div class="grid-container">
+   <div id="Time">
+                                      <?php
+                                      $x = 0;
+                while( $x++ < 24){
+                    $timetoprint = date('G:i:s',mktime($x,0,0,1,1,2019));
+                    echo  $timetoprint . '<br>';
+                 }
+                ?>
+                </div>
         <?php 
+
             $id = $_SESSION['id'];
             $day = date('w');
             $day = $day - 1;
@@ -9,7 +19,7 @@
             $enddate = strtotime("+7 days", $startdate);
             while ($startdate < $enddate) {
 ?>
-                
+
                 <div class="day">
                     <h4>
                         <?php  
