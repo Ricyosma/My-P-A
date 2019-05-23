@@ -1,6 +1,20 @@
 <section id="agenda">
    <div class="grid-container">
+   <div class="day">
+       <h4 style="margin-bottom:0px; margin-top: 0;">Time:</h4>
+          <div class="lane" style="text-align: center;">
+          <?php
+                                      $x = 0;
+                while( $x++ < 24){
+                    $timetoprint = date('G:i:s',mktime($x,0,0,1,1,2019));
+                    echo  $timetoprint . '<br>';
+                 }
+                ?>
+              
+          </div>  
+        </div>
         <?php 
+
             $id = $_SESSION['id'];
             $day = date('w');
             $day = $day - 1;

@@ -1,8 +1,8 @@
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   /* grid-template-rows: ; */
-  grid-template-areas: "Monday Tuesday Wednesday Thursday Friday Saturday Sunday";
+  grid-template-areas: "Time Monday Tuesday Wednesday Thursday Friday Saturday Sunday";
 }
 
 .Friday {
