@@ -40,38 +40,38 @@
     <table class="spacing">
         <tr>
             <div class="form-group">
-                <td> <label for="exampleInputEmail2">Voornaam</label> </td>
+                <td> <label for="exampleInputEmail2">First name</label> </td>
                 <td> <input type="firstname" class="form-control" id="exampleInputEmail2" placeholder="Vul uw voornaam in" required name="Voornaam"> </td>
             </div>
         </tr>
         <tr>
             <div class="form-group">
-                <td> <label for="exampleInputEmail2">Achternaam</label> </td>
+                <td> <label for="exampleInputEmail2">Last name</label> </td>
                 <td> <input type="lastname" class="form-control" id="exampleInputEmail2" placeholder="Vul uw achternaam in" required name="Achternaam"></td>
             </div>
         </tr>
         <tr>
             <div class="form-group">
-                <td> <label for="exampleInputEmail2">Emailadres</label> </td>
+                <td> <label for="exampleInputEmail2">Email</label> </td>
                 <td> <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Vul uw email in" required name="E-mail"> </td> </tr>
             </div>
         </tr>
         <tr>
             <div class="form-group">
-                <td> <label for="exampleInputPassword1">Wachtwoord</label> </td>
+                <td> <label for="exampleInputPassword1">Password</label> </td>
                 <td> <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Wachtwoord" required name="password"> </td>
                 <br>
         </tr>
         <tr>
-                <td> <label for="exampleInputPassword2">Herhaal wachtwoord</label> </td>
+                <td> <label for="exampleInputPassword2">Repeat password</label> </td>
                 <td> <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Herhaal uw wachtwoord" required name="passwordR"> </td>
                 <h4> <?php if(isset($_POST['submit'])){
                 echo $message;}?> </h4>
             </div>
         </tr>
         <tr>
-            <td> <button type="submit" name='submit' class="submit">Registreren</button> </td>
+            <td> <button type="submit" name='submit' class="submit">Register</button> </td>
         </tr>
-        <tfoot><tr><td> <small id="emailHelp1" class="form-text">Uw email zal nooit worden gedeeld met andere partijen.</small> </tr></td></tfoot>
+        <tfoot><tr><td> <small id="emailHelp1" class="form-text">Your email will never be shared with any other parties.</small> </tr></td></tfoot>
     </table>
 </form>
