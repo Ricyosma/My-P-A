@@ -38,28 +38,31 @@ $id = $_SESSION['id'];
 			<div class="well">
 				<div class="tab-content">
 					<div class="tab-pane fade in active" id="tab1">
-						<table>
-							<tr>
-									<div id="vnaam">
-								<td><h1>First name:</h1></td>
-								<td><h1><?php echo $vnaam; ?></h1></td>
-									</div>
-							</tr>
-							<tr>
+							<img src="../realisatie/css/Images/ggebruiker.png" id="ggebruiker">
+									<div id="profiel"><br><br>
+										<div id="vnaam">
+								<h1>First name:
+								<?php echo $vnaam; ?></h1>
+										</div>
+									<br>
 									<div id="anaam">
-								<td><h1>Last name:</h1></td>
-								<td><h1><?php echo $anaam; ?></h1></td>
+								<h1>Last name:
+								<?php echo $anaam; ?></h1>
 									</div>
-							</tr>
-							<tr>
-								<td><h1>Email:</h1></td>
-								<td><h1><?php echo $mail; ?></h1></td>
-							</tr>
-							<tr>
-								<td><h1>User ID:</h1></td>
-								<td><h1><?php echo $id; ?></h1></td>
-							</tr>
-						</table>
+
+								<br><br>
+									<div id="email">
+								<h1>Email:
+								<?php echo $mail; ?></h1>
+									</div>
+
+								<br><br>	
+									<div id="user">
+								<h1>User ID:
+								<?php echo $id; ?></h1>
+									</div>	
+								</div>
+
 					</div>
 				</div>
 			</div>

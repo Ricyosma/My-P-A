@@ -6,8 +6,16 @@
 artic wit ->  background-color: #F0F4FF;
 lichtblauw->  background-color: #4E67EB;
 donkerblauw ->  background-color: #291D89; */
-html, body, .left {
+/* html, body, .left {
     min-height: 100% !important;
+} */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 html {
     overflow-y: scroll !important;
@@ -124,11 +132,44 @@ table input:focus {
     font-family: 'Rubik', sans-serif !important;
 }
 
-#vnaam {
+#profiel {
     padding-top: 5%;
-    margin-right: 10%;
+}
+
+#vnaam{
+    position: relative;
+    width: 60%;
+    left: 36%;
 }
 
 #anaam {
-    margin-right: 20%;
+    padding-top: 30px;
+    position: relative;
+    width: 50%;
+    left: 37%;
+}
+
+#email {
+    padding-top: 15px;
+    position: relative;
+    width: 80%;
+    left: 35%;
+}
+
+#user {
+    padding-top: 15px;
+    position: relative;
+    width: 90%;
+    left: 30%;
+}
+
+#ggebruiker {
+    border-radius: 50%;
+    height: 65%;
+    width: 30%;
+    padding-top: -90px;
+    top: 170px;
+    left: 170px;
+    position: absolute;
+
 }

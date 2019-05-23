@@ -106,9 +106,6 @@ li.dropdown {
 }
 
 .footer {
-    /* clear: both; */
-    background-color: #7594E7;
-    color: #000;
     text-align: center;
     max-height: 20px;
 }
@@ -117,4 +114,5 @@ li.dropdown {
     text-align: center;
     padding: 10px;
     background-color: #7594E7;
+    color: white;
 } 

@@ -39,10 +39,9 @@
             $sql = "INSERT INTO task (Task, Priority, User_ID, Description, Color_ID, Date, Time, End_time) 
                     VALUES ('$taskName','$priority','$id', '$description', '$color_id', '$date', '$time', '$endTime')";
             // use exec() because no results are returned
-            $conn->exec($sql);
+            $conn->exec($sql); 
             $taskOutput = 'Task added on:' . ' '. $date . ' ' . 'at' . ' ' . $time;
-            $_SESSION['dashmessage'] = $taskOutput; 
-            echo $taskOutput;
+            $_SESSION['dashmessage'] = $taskOutput;
             header("Location: index.php?page=dashboard");
         } catch(PDOException $e) {
             echo $sql . "<br>" . $e->getMessage();
@@ -56,9 +55,9 @@
             <h3>Most recent add:</h3>
             <div id="messageOutput">
                 <?php 
-                   if(isset($_POST['submit'])){
-                       echo $_SESSION['dashmessage'];
-                } 
+                       if (isset($_SESSION['dashmessage'])) {
+                            echo $_SESSION['dashmessage'];
+                       }
                 ?>
             </div>
         </div>
