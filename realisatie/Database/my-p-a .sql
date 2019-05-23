@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 23 mei 2019 om 09:02
+-- Gegenereerd op: 23 mei 2019 om 13:35
 -- Serverversie: 10.1.36-MariaDB
 -- PHP-versie: 7.2.11
 
@@ -100,13 +100,12 @@ CREATE TABLE `task` (
 --
 
 INSERT INTO `task` (`Task_ID`, `User_ID`, `Task`, `Priority`, `Description`, `Color_ID`, `Date`, `Time`, `End_time`) VALUES
-(18, 831873457, 'output test', '5', 'This is a test', 3, '2019-05-23', '04:30:00', '17:30:00'),
-(19, 831873457, 'output test 2', '3', 'wvvvw', 5, '2019-05-24', '04:30:00', '19:30:00'),
-(20, 831873457, 'jhkj', '3', '56456', 6, '2019-05-15', '05:56:00', '05:56:00'),
-(21, 831873457, ';lk;l', '3', 'ko', 6, '2019-05-24', '05:56:00', '04:59:00'),
-(22, 831873457, 'going home', '3', '4\r\n64', 5, '2019-05-23', '07:59:00', '05:59:00'),
-(23, 831873457, 'going home', '3', 'opiop', 4, '2019-05-22', '04:59:00', '06:59:00'),
-(24, 831873457, 'jij', '3', 'p[[', 5, '2019-05-23', '05:59:00', '05:59:00');
+(25, 831873457, 'Study', '4', 'studying', 4, '2019-05-20', '09:30:00', '12:00:00'),
+(26, 831873457, 'Free time', '3', 'Free time', 5, '2019-05-20', '18:00:00', '22:00:00'),
+(27, 831873457, 'deliver results', '3', 'presenting', 2, '2019-05-23', '14:00:00', '16:00:00'),
+(28, 831873457, 'Working on projects', '3', 'help', 2, '2019-05-23', '09:00:00', '14:00:00'),
+(29, 831873457, 'Working', '3', 'work', 3, '2019-05-25', '06:00:00', '17:00:00'),
+(30, 831873457, 'Project working', '3', '.', 6, '2019-05-22', '09:00:00', '18:00:00');
 
 -- --------------------------------------------------------
 
@@ -216,7 +215,7 @@ ALTER TABLE `factuur`
 -- AUTO_INCREMENT voor een tabel `task`
 --
 ALTER TABLE `task`
-  MODIFY `Task_ID` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `Task_ID` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT voor een tabel `user`
