@@ -1,6 +1,6 @@
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 100% 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas: "Time Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Time Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Time Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Time Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Time Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Time Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Time Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Time Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Time Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Time Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Time Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Time Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Time Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Time Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Time Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Time Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Time Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Time Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Time Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Time Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Time Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Time Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Time Monday Tuesday Wednesday Thursday Friday Saturday Sunday";
 }
@@ -21,15 +21,11 @@
 
 .Sunday { grid-area: Sunday; 
 }
-#id{
-  
-  width: 25%;
-}
 
 .lane {
   border-right: 1px solid lightgrey;
-  padding-top: 10px;
-  min-height: 420px;
+  padding-top: 10px;  
+  min-height: 470.8px;
   border-radius: 5px;
 }
 .day h4 {
