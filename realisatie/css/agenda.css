@@ -1,24 +1,65 @@
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 100% 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday" "Monday Tuesday Wednesday Thursday Friday Saturday Sunday";
+  /* grid-template-rows: ; */
+  grid-template-areas: "Monday Tuesday Wednesday Thursday Friday Saturday Sunday";
 }
 
-.Monday { grid-area: Monday;}
+.Friday {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." ".";
+  grid-area: Friday;
+}
 
-.Tuesday { grid-area: Tuesday; }
+.Saturday {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." ".";
+  grid-area: Saturday;
+}
 
-.Wednesday { grid-area: Wednesday; }
+.Sunday {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." ".";
+  grid-area: Sunday;
+}
 
-.Thursday { grid-area: Thursday; }
+.Monday {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." ".";
+  grid-area: Monday;
+}
 
-.Friday { grid-area: Friday; }
+.Tuesday {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." ".";
+  grid-area: Tuesday;
+}
 
-.Saturday { grid-area: Saturday; }
+.Wednesday {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." ".";
+  grid-area: Wednesday;
+}
 
-.Sunday { grid-area: Sunday; }
-
+.Thursday {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." "." ".";
+  grid-area: Thursday;
+}
 .lane {
   border-right: 1px solid lightgrey;
   min-height: 420px;
@@ -41,7 +82,7 @@
   width: 100%;
   border-radius: 5px;
   border: 1px solid lightgray;
-  height: 35px;
+  height: 17.5px;
 }
 .taskWrapper {
   width: 90%;

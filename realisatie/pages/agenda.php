@@ -46,13 +46,19 @@
                                     <div class="task <?php echo $color_name; ?> >">
                                         <div class="taskWrapper">
                                             <div class="agendaTime">
-                                                <h6><?php echo $row['Time'] ?></h6>
+                                                <h6><?php 
+                                                    // echo $row['Time'];
+                                                ?></h6>
                                             </div>
                                             <div class="nameHolder">
-                                                <h5><?php echo $row['Task'];?></h5>
+                                                <h5><?php 
+                                                    echo $row['Task'];
+                                                ?></h5>
                                             </div>
                                             <div class="agendaTime">
-                                                <h6><?php echo $row['End_time'] ?></h6>
+                                                <h6><?php 
+                                                    // echo $row['End_time']; 
+                                                ?></h6>
                                             </div>  
                                         </div>                                              
                                     </div>
