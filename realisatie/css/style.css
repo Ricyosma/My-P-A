@@ -134,12 +134,13 @@ table input:focus {
 
 #profiel {
     padding-top: 5%;
+    top: 5%;
 }
 
 #vnaam{
     position: relative;
     width: 60%;
-    left: 36%;
+    left: 35%;
 }
 
 #anaam {
@@ -153,23 +154,23 @@ table input:focus {
     padding-top: 15px;
     position: relative;
     width: 80%;
-    left: 35%;
+    left: 33%;
 }
 
 #user {
     padding-top: 15px;
     position: relative;
     width: 90%;
-    left: 30%;
+    left: 26%;
 }
 
 #ggebruiker {
     border-radius: 50%;
-    height: 65%;
+    height: 62%;
     width: 30%;
-    padding-top: -90px;
-    top: 170px;
-    left: 170px;
+    padding-top: -25%;
+    top: 23%;
+    left: 10%;
     position: absolute;
 
 }

@@ -56,7 +56,7 @@ $id = $_SESSION['id'];
 								<?php echo $mail; ?></h1>
 									</div>
 
-								<br><br>	
+								<br><br>
 									<div id="user">
 								<h1>User ID:
 								<?php echo $id; ?></h1>
