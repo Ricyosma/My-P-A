@@ -1,5 +1,6 @@
 <section id="agenda">
    <div class="grid-container">
+       <div class="day">
         <div class="Time-stamp">
             <h4>Time <br>
                 stamp:</h4>
@@ -28,6 +29,7 @@
             <div class="\32 2">23:00</div>
             <div class="\32 3">00:00</div>
             <br>
+            </div>
         </div>
         <?php 
 
