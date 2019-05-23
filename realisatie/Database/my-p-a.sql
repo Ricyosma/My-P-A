@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 22 mei 2019 om 14:37
+-- Gegenereerd op: 23 mei 2019 om 09:02
 -- Serverversie: 10.1.36-MariaDB
 -- PHP-versie: 7.2.11
 
@@ -58,12 +58,12 @@ CREATE TABLE `color` (
 --
 
 INSERT INTO `color` (`Color_ID`, `Color`) VALUES
-(1, 'UFO Green'),
-(2, 'Plastic Pink'),
-(3, 'Proton Purple'),
-(4, 'Fiery Reds'),
-(5, 'Ocean Blue'),
-(6, 'Sunset Orange');
+(1, 'ufoGreen'),
+(2, 'plasticPink'),
+(3, 'protonPurple'),
+(4, 'fieryReds'),
+(5, 'oceanBlue'),
+(6, 'sunsetOrange');
 
 -- --------------------------------------------------------
 
@@ -94,6 +94,19 @@ CREATE TABLE `task` (
   `Time` time NOT NULL,
   `End_time` time NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `task`
+--
+
+INSERT INTO `task` (`Task_ID`, `User_ID`, `Task`, `Priority`, `Description`, `Color_ID`, `Date`, `Time`, `End_time`) VALUES
+(18, 831873457, 'output test', '5', 'This is a test', 3, '2019-05-23', '04:30:00', '17:30:00'),
+(19, 831873457, 'output test 2', '3', 'wvvvw', 5, '2019-05-24', '04:30:00', '19:30:00'),
+(20, 831873457, 'jhkj', '3', '56456', 6, '2019-05-15', '05:56:00', '05:56:00'),
+(21, 831873457, ';lk;l', '3', 'ko', 6, '2019-05-24', '05:56:00', '04:59:00'),
+(22, 831873457, 'going home', '3', '4\r\n64', 5, '2019-05-23', '07:59:00', '05:59:00'),
+(23, 831873457, 'going home', '3', 'opiop', 4, '2019-05-22', '04:59:00', '06:59:00'),
+(24, 831873457, 'jij', '3', 'p[[', 5, '2019-05-23', '05:59:00', '05:59:00');
 
 -- --------------------------------------------------------
 
@@ -203,7 +216,7 @@ ALTER TABLE `factuur`
 -- AUTO_INCREMENT voor een tabel `task`
 --
 ALTER TABLE `task`
-  MODIFY `Task_ID` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `Task_ID` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT voor een tabel `user`

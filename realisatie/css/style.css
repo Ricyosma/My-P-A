@@ -133,10 +133,13 @@ table input:focus {
 }
 
 #vnaam {
-    padding-top: 5%;
     margin-right: 10%;
+    float: left;
 }
 
-#anaam {
-    margin-right: 20%;
+table td {
+    position: relative;
+    width: 50%;
+    left: 25%;
+    
 }
