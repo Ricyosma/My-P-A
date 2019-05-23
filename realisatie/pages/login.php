@@ -36,13 +36,13 @@
 		<tr>
 	    <div class="form-group">
 	      <td><label for="exampleInputEmail2">Email</label> </td>
-	      <td> <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Vul uw email in" require name="email"> </td>
+	      <td> <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email" require name="email"> </td>
 		  </div>
 		</tr>
 			<tr>
 					<div class="form-group">
 					<td> <label for="exampleInputPassword1"> Password</label> </td>
-					<td> <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Uw wachtwoord" require name="password"> </td>
+					<td> <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" require name="password"> </td>
 				</div>
 			</tr>
 		<tr>

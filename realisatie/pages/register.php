@@ -41,30 +41,30 @@
         <tr>
             <div class="form-group">
                 <td> <label for="exampleInputEmail2">First name</label> </td>
-                <td> <input type="firstname" class="form-control" id="exampleInputEmail2" placeholder="Vul uw voornaam in" required name="Voornaam"> </td>
+                <td> <input type="firstname" class="form-control" id="exampleInputEmail2" placeholder="First name" required name="Voornaam"> </td>
             </div>
         </tr>
         <tr>
             <div class="form-group">
                 <td> <label for="exampleInputEmail2">Last name</label> </td>
-                <td> <input type="lastname" class="form-control" id="exampleInputEmail2" placeholder="Vul uw achternaam in" required name="Achternaam"></td>
+                <td> <input type="lastname" class="form-control" id="exampleInputEmail2" placeholder="Last name" required name="Achternaam"></td>
             </div>
         </tr>
         <tr>
             <div class="form-group">
                 <td> <label for="exampleInputEmail2">Email</label> </td>
-                <td> <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Vul uw email in" required name="E-mail"> </td> </tr>
+                <td> <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email" required name="E-mail"> </td> </tr>
             </div>
         </tr>
         <tr>
             <div class="form-group">
                 <td> <label for="exampleInputPassword1">Password</label> </td>
-                <td> <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Wachtwoord" required name="password"> </td>
+                <td> <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required name="password"> </td>
                 <br>
         </tr>
         <tr>
                 <td> <label for="exampleInputPassword2">Repeat password</label> </td>
-                <td> <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Herhaal uw wachtwoord" required name="passwordR"> </td>
+                <td> <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Repeat password" required name="passwordR"> </td>
                 <h4> <?php if(isset($_POST['submit'])){
                 echo $message;}?> </h4>
             </div>
