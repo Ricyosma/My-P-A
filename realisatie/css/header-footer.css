@@ -28,22 +28,23 @@ header::after {
 }
 
 nav {
-    background: #4e67eb;
     float: right;
+    margin-right: 14%;
 }
 
 nav ul {
-    margin-top: 5%;
+    margin-top: 8%;
+    margin-right: 5%;
     padding: 0;
     list-style: none;
+    width: 150%;
 }
 
 nav li {
     display: inline-block;
-    margin-left: 70px;
     border: 1px solid white;
     border-radius: 5px;
-    
+    margin-left: 5%;
 }
 
 nav ul li a {
@@ -106,6 +107,9 @@ li.dropdown {
 }
 
 .footer {
+    /* clear: both; */
+    background-color: #7594E7;
+    color: #000;
     text-align: center;
     max-height: 20px;
 }
@@ -114,5 +118,4 @@ li.dropdown {
     text-align: center;
     padding: 10px;
     background-color: #7594E7;
-    color: white;
 } 
