@@ -1,7 +1,7 @@
 <section id="agenda">
    <div class="grid-container">
         <div class="Time-stamp">
-            <h4>time</h4>
+            <h4>Time:</h4>
             <div class="\30 0">01:00</div>
             <div class="\30 1">02:00</div>
             <div class="\30 2">03:00</div>
