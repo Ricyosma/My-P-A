@@ -9,21 +9,15 @@
 .Monday { grid-area: Monday;
 }
 
-.Tuesday { grid-area: Tuesday; 
+.Tuesday { grid-area: Tuesday; }
 
-}
+.Wednesday { grid-area: Wednesday; }
 
-.Wednesday { grid-area: Wednesday; 
-}
+.Thursday { grid-area: Thursday; }
 
-.Thursday { grid-area: Thursday; 
-}
+.Friday { grid-area: Friday; }
 
-.Friday { grid-area: Friday; 
-}
-
-.Saturday { grid-area: Saturday; 
-}
+.Saturday { grid-area: Saturday; }
 
 .Sunday { grid-area: Sunday; 
 }
@@ -34,8 +28,9 @@
 
 .lane {
   border-right: 1px solid lightgrey;
-  min-height: 400px;
   padding-top: 10px;
+  min-height: 420px;
+  border-radius: 5px;
 }
 .day h4 {
   text-align: center;
@@ -44,10 +39,11 @@
   padding-top: 10px;
   width: 100% !important;
   float: left;
-  /* height: 100% !important; */
+
 }
 .currentDay {
-  background-color: lightgray'
+  background-color: rgba(78, 104, 235, 0.171);
+  border-radius: 5px;
 }
 .task {
   width: 100%;

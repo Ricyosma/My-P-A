@@ -71,6 +71,10 @@ form {
     color: white;
     width: 60%;
     padding: 10px;
+    margin: 1px;
+}
+#goButton:hover {
+    border: 1px solid white;
 }
 #stopButton {
     border-radius: 5px;

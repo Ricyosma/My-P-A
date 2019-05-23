@@ -6,8 +6,16 @@
 artic wit ->  background-color: #F0F4FF;
 lichtblauw->  background-color: #4E67EB;
 donkerblauw ->  background-color: #291D89; */
-html, body, .left {
+/* html, body, .left {
     min-height: 100% !important;
+} */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 html {
     overflow-y: scroll !important;
@@ -125,10 +133,13 @@ table input:focus {
 }
 
 #vnaam {
-    padding-top: 5%;
     margin-right: 10%;
+    float: left;
 }
 
-#anaam {
-    margin-right: 20%;
+table td {
+    position: relative;
+    width: 50%;
+    left: 25%;
+    
 }
