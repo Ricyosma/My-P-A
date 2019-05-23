@@ -25,16 +25,18 @@
 
   </head>
   <body>
-    <nav>
-        <div id="navbar-brand"><a class="navbar-brand" style="font-size: 450%;" href="index.php?page=home">My P-A</a></div>
-      <div id="menu">
+    <header>
+
+        <a class="navbar-brand" style="font-size: 400%;" href="index.php?page=agenda">My P-A</a>
+
+      <nav>
         <ul>
           <li>
-            <a href="index.php?page=register">Registreren</a>
+            <a href="index.php?page=register">Register</a>
           </li>
           <li>
-            <a href="index.php?page=login">Aanmelden</a>
+            <a href="index.php?page=login">Sign in</a>
           </li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+  </header>
