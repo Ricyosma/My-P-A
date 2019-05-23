@@ -35,21 +35,21 @@
 	<table class="spacing">
 		<tr>
 	    <div class="form-group">
-	      <td><label for="exampleInputEmail2">Emailadres</label> </td>
+	      <td><label for="exampleInputEmail2">Email</label> </td>
 	      <td> <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Vul uw email in" require name="email"> </td>
 		  </div>
 		</tr>
 			<tr>
 					<div class="form-group">
-					<td> <label for="exampleInputPassword1">Wachtwoord</label> </td>
+					<td> <label for="exampleInputPassword1"> Password</label> </td>
 					<td> <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Uw wachtwoord" require name="password"> </td>
 				</div>
 			</tr>
 		<tr>
-		<td> <button type="submit" name="submit" class="submit">Aanmelden</button> </td>
+		<td> <button type="submit" name="submit" class="submit">Login</button> </td>
 		</tr>
 		<br>
-		<tfoot><tr><td> <small id="emailHelp1" class="form-text">Uw email zal nooit worden gedeeld met andere partijen.</small> </td></tr></tfoot>
+		<tfoot><tr><td> <small id="emailHelp1" class="form-text">Your email will never be shared with any other parties.</small> </td></tr></tfoot>
 	</table>
 	</form>
 	<div id=fill2></div>

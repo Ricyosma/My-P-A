@@ -35,7 +35,7 @@
             <a href="index.php?page=register">Register</a>
           </li>
           <li>
-            <a href="index.php?page=login">Sign in</a>
+            <a href="index.php?page=login">Login</a>
           </li>
         </ul>
       </nav>

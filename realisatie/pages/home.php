@@ -21,15 +21,15 @@
     <div class="cola">
     <img src="../realisatie/css/Images/logotje.png" id="homebook">
     <br><br><br>
-        <h3 id='hometext' style="text-align:left;">Welkom bij My Personal Agenda, 
-            met deze website wordt plannen een makkie!</h3>
+        <h3 id='hometext' style="text-align:left;">Welcome to My Personal Agenda,  
+          This makes scheduling easier!</h3>
 
-            <p id='hometext'> Aanmelden? Zo doe je dat: <br>
-                Je maakt een account aan (ben je onder de 18 moet je toestemming aan je ouders vragen),<br>
-                je kiest een abonnement doet de eerste betaling, checkt je mail en je bent klaar! <br>
-                Aangemeld en wat nu? <br>
-                Je gaat naar de Agenda pagina, drukt op dashboard en maakt een taak aan met de tijd, datum, prioriteit, kleur en beschrijving. <br>
-                Dit doe je totdat je agenda vol is en je kan aan het werk. </p>
+            <p id='hometext'><b> Sign up? This is how: </b><br>
+                You create an account (under 18 you have to ask your parents’ permission), <br>
+                you choose a subscription (rental) does the first payment, check your mail and you're done! <br>
+                <b>Signed up and what next?</b> <br>
+                You go to the Agenda page, press dashboard and create a task with the time, date, priority, color and description. <br>
+                You do this until your calendar is full and you can get to work.  </p>
     </div>
     <div id='fill1'></div>
 </body>
