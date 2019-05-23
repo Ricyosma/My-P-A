@@ -26,7 +26,7 @@
 
             <p id='hometext'><b> Sign up? This is how: </b><br>
                 You create an account (under 18 you have to ask your parents’ permission), <br>
-                you choose a subscription (rental) does the first payment, check your mail and you're done! <br>
+                you choose a subscription (rental) does the first payment, check your mail and you're done! <br><br>
                 <b>Signed up and what next?</b> <br>
                 You go to the Agenda page, press dashboard and create a task with the time, date, priority, color and description. <br>
                 You do this until your calendar is full and you can get to work.  </p>
