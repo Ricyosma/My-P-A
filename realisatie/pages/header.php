@@ -35,11 +35,7 @@
             <a href="index.php?page=register">Register</a>
           </li>
           <li>
-<<<<<<< HEAD
             <a href="index.php?page=login">Login</a>
-=======
-            <a href="index.php?page=login">Sign in</a>
->>>>>>> 83f3af00f683582ce29be668478bc59b5d74cd7d
           </li>
         </ul>
       </nav>
