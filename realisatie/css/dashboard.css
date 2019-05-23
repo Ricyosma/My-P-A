@@ -72,6 +72,7 @@ form {
     width: 60%;
     padding: 10px;
     margin: 1px;
+    min-width: 134px;
 }
 #goButton:hover {
     border: 1px solid white;
@@ -82,5 +83,6 @@ form {
     background-color: #4E67EB;
     color: white;
     width: 30%;
+    min-width: 67px;
     padding: 10px;
 }

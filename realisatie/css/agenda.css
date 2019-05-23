@@ -1,5 +1,6 @@
 .grid-container {
   display: grid;
+  min-height: 100vh;
   grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "Time-stamp Monday Tuesday Wednesday Thursday Friday Saturday Sunday";
@@ -62,6 +63,7 @@
 }
 
 .Time-stamp {
+  min-height: 100%;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -120,10 +122,8 @@
   border-right: 1px solid lightgrey;
   border-radius: 5px;
 }
-.day {
-  height: 100%;
-}
-.day .lane {
+
+.day, .lane {
   min-height: 100%;
 }
 .day h4 {
@@ -132,6 +132,7 @@
 #agenda {
   padding-top: 10px;
   width: 100% !important;
+  min-height: 100%;
   float: left;
 }
 .currentDay {
