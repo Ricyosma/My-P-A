@@ -132,14 +132,44 @@ table input:focus {
     font-family: 'Rubik', sans-serif !important;
 }
 
-#vnaam {
-    margin-right: 10%;
-    float: left;
+#profiel {
+    padding-top: 5%;
 }
 
-table td {
+#vnaam{
+    position: relative;
+    width: 60%;
+    left: 36%;
+}
+
+#anaam {
+    padding-top: 30px;
     position: relative;
     width: 50%;
-    left: 25%;
-    
+    left: 37%;
+}
+
+#email {
+    padding-top: 15px;
+    position: relative;
+    width: 80%;
+    left: 35%;
+}
+
+#user {
+    padding-top: 15px;
+    position: relative;
+    width: 90%;
+    left: 30%;
+}
+
+#ggebruiker {
+    border-radius: 50%;
+    height: 65%;
+    width: 30%;
+    padding-top: -90px;
+    top: 170px;
+    left: 170px;
+    position: absolute;
+
 }
